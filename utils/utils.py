@@ -145,13 +145,13 @@ def get_path(subdir):
     return os.path.join(subdir)
 
 def save_config(time, log):
-    open_type = 'a' if os.path.exists(get_path('./log/' + str(time) + '/records.txt'))else 'w'
-    log_file = open(get_path('/home/hexuanhua/src/sr/pan-sharpening/log/' + str(time) + '/records.txt'), open_type)
+    open_type = 'a' if os.path.exists(get_path('./logs/' + str(time) + '/records.txt'))else 'w'
+    log_file = open(get_path('/home/Shawalt/Demos/ImageFusion/FAME-Net_back/FAME-Net/logs/' + str(time) + '/records.txt'), open_type)
     log_file.write(str(log) + '\n')
 
 def save_net_config(time, log):
-    open_type = 'a' if os.path.exists(get_path('./log/' + str(time) + '/net.txt'))else 'w'
-    log_file = open(get_path('/home/hexuanhua/src/sr/pan-sharpening/log/' + str(time) + '/net.txt'), open_type)
+    open_type = 'a' if os.path.exists(get_path('./logs/' + str(time) + '/net.txt'))else 'w'
+    log_file = open(get_path('/home/Shawalt/Demos/ImageFusion/FAME-Net_back/FAME-Net/logs/' + str(time) + '/net.txt'), open_type)
     log_file.write(str(log) + '\n')
 
 def calculate_psnr(img1, img2, pixel_range=255, color_mode='rgb'):
@@ -469,11 +469,11 @@ def fir_filter_wind(Hd, w):
     h = h * w
     h = h / np.sum(h)
     return h
-def no_ref_evaluate(pred, pan, hs):
+def no_ref_evaluate(pred, pan, hs, block_size=8):
     #no reference metrics
-    c_D_lambda = D_lambda(pred, hs)
-    c_D_s = D_s(pred, hs, pan)
-    c_qnr = qnr(pred, hs, pan)
+    c_D_lambda = D_lambda(pred, hs, block_size=8)
+    c_D_s = D_s(pred, hs, pan, block_size=8)
+    c_qnr = qnr(pred, hs, pan, block_size=8)
     c_qnr = (1-c_D_s)*(1-c_D_lambda)
     return [c_D_lambda, c_D_s, c_qnr]
 

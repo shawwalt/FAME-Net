@@ -6,6 +6,7 @@
 LastEditTime: 2021-01-19 20:57:29
 @Description: file content
 '''
+import re
 import torch.utils.data as data
 import torch, random, os
 import numpy as np
@@ -81,18 +82,22 @@ def augment(ms_image, lms_image, pan_image, bms_image, flip_h=True, rot=True):
             
     return ms_image, lms_image, pan_image, bms_image, info_aug
 
+def sort_key(file_name):
+    # 使用正则表达式提取文件名中的数字部分
+    match = re.search(r'_(\d+)', file_name)
+    return int(match.group(1)) if match else float('inf')  # 非数字文件排在最后
 
 class Data(data.Dataset):
     def __init__(self, data_dir_ms, data_dir_pan, cfg, transform=None, data_dir_mask=None):
         super(Data, self).__init__()
 
-        self.ms_image_filenames = [join(data_dir_ms, x) for x in listdir(data_dir_ms) if is_image_file(x)]
-        self.pan_image_filenames = [join(data_dir_pan, x) for x in listdir(data_dir_pan) if is_image_file(x)]
+        self.ms_image_filenames = [join(data_dir_ms, x) for x in sorted(listdir(data_dir_ms), key=sort_key) if is_image_file(x)]
+        self.pan_image_filenames = [join(data_dir_pan, x) for x in sorted(listdir(data_dir_pan), key=sort_key) if is_image_file(x)]
         self.mask_image_filenames = None
         if os.path.isdir(data_dir_mask):
-            self.mask_image_filenames = [join(data_dir_mask, x) for x in listdir(data_dir_mask) if is_image_file(x)]
-        data_dir_mask = os.path.join(data_dir_pan.split("\\")[:-1],"mask")
-        self.mask_filenames = [join(data_dir_pan, x) for x in listdir(data_dir_pan) if is_image_file(x)]
+            self.mask_image_filenames = [join(data_dir_mask, x) for x in sorted(listdir(data_dir_mask), key=sort_key) if is_image_file(x)]
+        data_dir_mask = os.path.join(*data_dir_pan.split("\\")[:-1],"mask")
+        self.mask_filenames = [join(data_dir_pan, x) for x in sorted(listdir(data_dir_pan), key=sort_key) if is_image_file(x)]
         self.patch_size = cfg['data']['patch_size']
         self.upscale_factor = cfg['data']['upsacle']
         self.transform = transform
@@ -108,7 +113,8 @@ class Data(data.Dataset):
             mask_image = load_img(self.mask_image_filenames[index])
             mask_image = mask_image.crop((0, 0, mask_image.size[0] // self.upscale_factor * self.upscale_factor,
                                           mask_image.size[1] // self.upscale_factor * self.upscale_factor))
-            mask_image = mask_image.convert('L')
+            # mask_image = mask_image.convert('L')
+            mask_image = torch.tensor(np.array(mask_image))
         _, file = os.path.split(self.ms_image_filenames[index])
         ms_image = ms_image.crop((0, 0, ms_image.size[0] // self.upscale_factor * self.upscale_factor,
                                   ms_image.size[1] // self.upscale_factor * self.upscale_factor))
@@ -117,12 +123,12 @@ class Data(data.Dataset):
         pan_image = pan_image.crop((0, 0, pan_image.size[0] // self.upscale_factor * self.upscale_factor,
                                     pan_image.size[1] // self.upscale_factor * self.upscale_factor))
         bms_image = rescale_img(lms_image, self.upscale_factor)
-        if self.mask_image_filenames:
-            ms_image, lms_image, pan_image, bms_image, _ = get_patch(ms_image, lms_image, pan_image, mask_image,
-                                                                     self.patch_size, scale=self.upscale_factor)
-        else:
-            ms_image, lms_image, pan_image, bms_image, _ = get_patch(ms_image, lms_image, pan_image, bms_image,
-                                                                     self.patch_size, scale=self.upscale_factor)
+        # if self.mask_image_filenames:
+        #     ms_image, lms_image, pan_image, bms_image, _ = get_patch(ms_image, lms_image, pan_image, mask_image,
+        #                                                              self.patch_size, scale=self.upscale_factor)
+        # else:
+        #     ms_image, lms_image, pan_image, bms_image, _ = get_patch(ms_image, lms_image, pan_image, bms_image,
+        #                                                              self.patch_size, scale=self.upscale_factor)
 
         if self.data_augmentation:
             ms_image, lms_image, pan_image, bms_image, _ = augment(ms_image, lms_image, pan_image, bms_image)
@@ -138,10 +144,11 @@ class Data(data.Dataset):
             lms_image = lms_image * 2 - 1
             pan_image = pan_image * 2 - 1
             bms_image = bms_image * 2 - 1
+            
         if self.mask_image_filenames:
-            hf = bms_image
+            hf = mask_image
             lf = 1 - hf
-            bms_image = torch.cat([hf, lf], dim=0)
+            bms_image = torch.cat([hf[None, :], lf[None, :]], dim=0)
         return ms_image, lms_image, pan_image, bms_image, file
 
     def __len__(self):

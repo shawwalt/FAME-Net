@@ -222,20 +222,21 @@ class LfExpert(nn.Module):
                                          nn.Conv2d(2*channels,channels,1,1,0))
         self.expert_networks_d = nn.ModuleList(
             [LfInstance(channels) for i in range(num_experts)])
+        self.num_experts = num_experts
 
     def forward(self, x):
         x = self.pre_fuse(x)
         cof = self.gate(x)
         out = torch.zeros_like(x).to(x.device)
         for idx in range(self.num_experts):
-            if cof[:,idx].all()==0:
+            if cof[:,idx].any()==0:
                 continue
             mask = torch.where(cof[:,idx]>0)[0]
             expert_layer = self.expert_networks_d[idx]
             expert_out = expert_layer(x[mask])
             cof_k = cof[mask,idx].view(-1,1,1,1)
             out[mask]+=expert_out*cof_k
-        return out,cof_k
+        return out,cof
 
 class HfExpert(nn.Module):
     def __init__(self,channels,num_experts,k):
@@ -245,19 +246,21 @@ class HfExpert(nn.Module):
             [HfInstance(channels) for i in range(num_experts)])
         self.pre_fuse = nn.Sequential(InvBlock(HinResBlock, 2*channels, channels),
                                          nn.Conv2d(2*channels,channels,1,1,0))
+        self.num_experts = num_experts
+
     def forward(self, x):
         x = self.pre_fuse(x)
         cof = self.gate(x)
         out = torch.zeros_like(x).to(x.device)
         for idx in range(self.num_experts):
-            if cof[:,idx].all()==0:
+            if cof[:,idx].any()==0:
                 continue
             mask = torch.where(cof[:,idx]>0)[0]
             expert_layer = self.expert_networks_d[idx]
             expert_out = expert_layer(x[mask])
             cof_k = cof[mask,idx].view(-1,1,1,1)
             out[mask]+=expert_out*cof_k
-        return out,cof_k
+        return out,cof
 
 class Decoder(nn.Module):
     def __init__(self,channels,num_experts,k):
@@ -267,20 +270,22 @@ class Decoder(nn.Module):
             [ConvProce(channels) for i in range(num_experts)])
         self.pre_fuse = nn.Sequential(InvBlock(HinResBlock, 4*channels, 2*channels),
                                          nn.Conv2d(4*channels,channels,1,1,0))
+        self.num_experts = num_experts
 
     def forward(self,x):
         x = self.pre_fuse(x)
         cof = self.gate(x)
         out = torch.zeros_like(x).to(x.device)
         for idx in range(self.num_experts):
-            if cof[:,idx].all()==0:
+            if cof[:,idx].any()==0:
                 continue
             mask = torch.where(cof[:,idx]>0)[0]
             expert_layer = self.expert_networks_d[idx]
             expert_out = expert_layer(x[mask])
             cof_k = cof[mask,idx].view(-1,1,1,1)
             out[mask]+=expert_out*cof_k
-        return out,cof_k
+        return out,cof
+    
 def upsample(x, h, w):
     return F.interpolate(x, size=[h, w], mode='bicubic', align_corners=True)
 
@@ -347,7 +352,7 @@ class Net(nn.Module):
         lf,hf,lf_gate,hf_gate  = self.moeInstance(panf,msf,high_fre_mask,low_fre_mask)
         dec,dec_gate = self.decoder(torch.cat([msf,hf,panf,lf],dim=1))
         HR = self.refine(dec)+mHR
-        return HR,mask,[lf_gate,hf_gate,dec_gate]
+        return HR,mask,*[lf_gate,hf_gate,dec_gate]
 
 def mean_channels(F):
     assert(F.dim() == 4)

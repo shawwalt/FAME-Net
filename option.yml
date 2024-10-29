@@ -11,16 +11,16 @@ nEpochs: 1000
 gpu_mode: True
 save_best: True
 gpus: [0]
-threads:  4 #num_works
-log_dir: ~
+threads:  8 #num_works
+log_dir: logs/
 
 
 seed: 123 #123
-checkpoint: ~
-data_dir_train: WV2_data/test128
-data_dir_eval: WV2_data/test128
+checkpoint: weights
+data_dir_train: wv3_data_dev/train
+data_dir_eval: wv3_data_dev/valid
 
-source_ms: ms
+source_ms: gt
 source_pan: pan
 
 pretrain:
@@ -31,16 +31,16 @@ pretrain:
 test:  #用于指标测试的代码
   algorithm: moe #pannetffft
   type: test #[test, eval]
-  data_dir: WV2_data/test128
-  source_ms: ms
+  data_dir: wv3_data_dev/valid
+  source_ms: gt
   source_pan: pan #moe_bal_4_1681220224
   model: ~
   #model: ugcn_s4nb_4_1630368984/best.pth
-  save_dir: pan-sharpening/result/moe_wv2/
+  save_dir: result/moe_wv3/
 
 data:
   upsacle:  4
-  batch_size: 4 #4
+  batch_size: 100 #4
   patch_size: 32
   data_augmentation: False
   n_colors: 4

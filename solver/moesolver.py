@@ -144,8 +144,9 @@ class Solver(BaseSolver):
                 total_highgate_loss = self.gate_loss(hf_gate)
                 total_decodergate_loss = self.gate_loss(dec_gate)
                 mask_loss = self.mask_loss(mask_gt,mask)
+                fuse_loss = self.loss(y, ms_image)
                 gl = total_lowgate_loss+total_highgate_loss+total_decodergate_loss
-                loss = (self.loss(y, ms_image)+para*mask_loss+gl)
+                loss = (fuse_loss+para*mask_loss+gl)
                 if self.cfg['schedule']['use_YCbCr']:
                     y_vgg = torch.unsqueeze(y[:,3,:,:], 1)
                     y_vgg_3 = torch.cat([y_vgg, y_vgg, y_vgg], 1)
@@ -190,6 +191,7 @@ class Solver(BaseSolver):
                 fake_img = y[:,:,:,:]
                 for c in range(y.shape[0]):
                     if not self.cfg['data']['normalize']:
+                        # 预测值里有负数？？？
                         predict_y = (y[c, ...].cpu().numpy().transpose((1, 2, 0))) * 255
                         ground_truth = (ms_image[c, ...].cpu().numpy().transpose((1, 2, 0))) * 255
                         pan = (pan_image[c, ...].cpu().numpy().transpose((1, 2, 0))) * 255
@@ -205,7 +207,7 @@ class Solver(BaseSolver):
                     ssim = cssim(predict_y,ground_truth,255)
                     l_ms = np.uint8(l_ms)
                     pan = np.uint8(pan)
-                    c_D_lambda, c_D_s, QNR = no_ref_evaluate(f_img,pan,l_ms)
+                    c_D_lambda, c_D_s, QNR = no_ref_evaluate(f_img,pan,l_ms, block_size=8)
                     batch_psnr.append(psnr)
                     batch_ssim.append(ssim)
                     batch_qnr.append(QNR)
