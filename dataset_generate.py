@@ -75,9 +75,6 @@ if generate is True:
 # plt.imshow(band)
 # plt.savefig('gt.png')
 
-
-
-
 # red = img.GetRasterBand(1).ReadAsArray()
 # green = img.GetRasterBand(4).ReadAsArray()
 # blue = img.GetRasterBand(7).ReadAsArray()

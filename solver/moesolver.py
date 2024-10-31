@@ -94,6 +94,7 @@ class CVLoss(nn.Module):
         cv = torch.std(logits,dim=1)/torch.mean(logits,dim=1)
         # print(cv)
         return self.loss_weight*torch.mean(cv**2)
+    
 class Solver(BaseSolver):
     def __init__(self, cfg):
         super(Solver, self).__init__(cfg)
@@ -126,8 +127,13 @@ class Solver(BaseSolver):
     def train(self): 
         with tqdm(total=len(self.train_loader), miniters=1,
                 desc='Initial Training Epoch: [{}/{}]'.format(self.epoch, self.nEpochs)) as t:
-            idx = math.pow(0.99, self.epoch - 1)
+            idx = math.pow(0.95, 0.1 * (self.epoch - 1))
             para = 1* (idx)
+            gl_para = 0
+            if self.epoch > 0.05 * self.nEpochs:
+                gl_para = 1
+            else:
+                gl_para = 0
             gate_cof = 1
             epoch_loss = 0
             for iteration, batch in enumerate(self.train_loader, 1):
@@ -146,7 +152,8 @@ class Solver(BaseSolver):
                 mask_loss = self.mask_loss(mask_gt,mask)
                 fuse_loss = self.loss(y, ms_image)
                 gl = total_lowgate_loss+total_highgate_loss+total_decodergate_loss
-                loss = (fuse_loss+para*mask_loss+gl)
+                # loss = (fuse_loss+para*mask_loss) # 无正则化
+                loss = (fuse_loss+para*mask_loss+gl*gl_para) 
                 if self.cfg['schedule']['use_YCbCr']:
                     y_vgg = torch.unsqueeze(y[:,3,:,:], 1)
                     y_vgg_3 = torch.cat([y_vgg, y_vgg, y_vgg], 1)

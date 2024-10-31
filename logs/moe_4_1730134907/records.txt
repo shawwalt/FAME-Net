@@ -1,3 +1,0 @@
-Train dataset has 9714 images and 98 batches.
-Val dataset has 1080 images and 11 batches.
-Model parameters: 1244228

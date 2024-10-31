@@ -17,30 +17,30 @@ log_dir: logs/
 
 seed: 123 #123
 checkpoint: weights
-data_dir_train: wv3_data_dev/train
-data_dir_eval: wv3_data_dev/valid
+data_dir_train: /home/Shawalt/Demos/ImageFusion/DataSet/NBU_DataSet/Satellite_Dataset/DataSet_TIF/6_WorldView-3
+data_dir_eval: /home/Shawalt/Demos/ImageFusion/DataSet/NBU_DataSet/Satellite_Dataset/DataSet_TIF/6_WorldView-3
 
-source_ms: gt
-source_pan: pan
+source_ms: MS_256
+source_pan: PAN_1024
 
 pretrain:
   pretrained: False
-  pre_sr: ~
-  pre_folder: ~
+  pre_sr: latest.pth
+  pre_folder: /home/Shawalt/Demos/ImageFusion/FAME-Net_back/FAME-Net/weights/moe_4_1730195788
 
 test:  #用于指标测试的代码
   algorithm: moe #pannetffft
   type: test #[test, eval]
   data_dir: wv3_data_dev/valid
-  source_ms: gt
-  source_pan: pan #moe_bal_4_1681220224
+  source_ms: MS_256
+  source_pan: PAN_1024 #moe_bal_4_1681220224
   model: ~
   #model: ugcn_s4nb_4_1630368984/best.pth
   save_dir: result/moe_wv3/
 
 data:
   upsacle:  4
-  batch_size: 100 #4
+  batch_size: 4 #4
   patch_size: 32
   data_augmentation: False
   n_colors: 4

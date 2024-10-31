@@ -21,19 +21,19 @@ def transform():
 def get_data(cfg, mode):
     data_dir_ms = join(mode, cfg['source_ms'])
     data_dir_pan = join(mode, cfg['source_pan'])
-    data_dir_mask = join(mode,"mask")
+    data_dir_mask = './mask'
     cfg = cfg
     return Data(data_dir_ms, data_dir_pan, cfg, transform=transform(),data_dir_mask=data_dir_mask)
     
 def get_test_data(cfg, mode):
     data_dir_ms = join(mode, cfg['test']['source_ms'])
     data_dir_pan = join(mode, cfg['test']['source_pan'])
-    data_dir_mask = join(mode, "mask")
+    data_dir_mask = './mask'
     cfg = cfg
     return Data_test(data_dir_ms, data_dir_pan, cfg, transform=transform(),data_dir_mask=data_dir_mask)
 
 def get_eval_data(cfg, data_dir, upscale_factor):
     data_dir_ms = join(mode, cfg['test']['source_ms'])
-    data_dir_pan = join(mode, cfg['test']['source_pan'])
+    data_dir_pan = './mask'
     cfg = cfg
     return Data_eval(data_dir_ms, data_dir_pan, cfg, transform=transform())

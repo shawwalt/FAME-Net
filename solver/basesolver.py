@@ -12,6 +12,7 @@ from data.dataset import data
 from data.data import get_data,get_test_data
 from torch.utils.data import DataLoader
 import torch.multiprocessing
+from torch.utils.data import random_split
 torch.multiprocessing.set_sharing_strategy('file_system')
 
 class BaseSolver:
@@ -28,15 +29,28 @@ class BaseSolver:
         else:
             self.num_workers = 0
 
-        self.train_dataset = get_data(cfg, cfg['data_dir_train'])
+        # self.train_dataset = get_data(cfg, cfg['data_dir_train'])
+        # self.train_loader = DataLoader(self.train_dataset, cfg['data']['batch_size'], shuffle=False,
+        #     num_workers=self.num_workers)
+        # self.val_dataset = get_data(cfg, cfg['data_dir_eval'])
+        # self.val_loader = DataLoader(self.val_dataset, cfg['data']['batch_size'], shuffle=False,
+        #     num_workers=self.num_workers)
+        # self.test_dataset = get_test_data(cfg, cfg['data_dir_eval'])
+        # self.test_loader = DataLoader(self.test_dataset, shuffle=False, batch_size=cfg['data']['batch_size'],
+        #                               num_workers=self.num_workers)
+        self.dataset = get_data(cfg, cfg['data_dir_train'])
+        train_size = int(0.7 * len(self.dataset))
+        val_size = int(0.2 * len(self.dataset))
+        test_size = int(0.1 * len(self.dataset))
+        assert train_size + val_size + test_size == len(self.dataset)
+        self.train_dataset, self.val_dataset, self.test_dataset = random_split(self.dataset, [train_size, val_size, test_size])
+
         self.train_loader = DataLoader(self.train_dataset, cfg['data']['batch_size'], shuffle=False,
             num_workers=self.num_workers)
-        self.val_dataset = get_data(cfg, cfg['data_dir_eval'])
         self.val_loader = DataLoader(self.val_dataset, cfg['data']['batch_size'], shuffle=False,
             num_workers=self.num_workers)
-        self.test_dataset = get_test_data(cfg, cfg['data_dir_eval'])
-        self.test_loader = DataLoader(self.test_dataset, shuffle=False, batch_size=cfg['data']['batch_size'],
-                                      num_workers=self.num_workers)
+        self.test_loader = DataLoader(self.test_dataset, cfg['data']['batch_size'], shuffle=False,
+            num_workers=self.num_workers)
         self.records = {'Epoch': [], 'PSNR': [], 'SSIM': [], 'Loss': [],'QNR':[],'D_lamda':[],'D_s':[]}
 
         if not os.path.exists(self.checkpoint_dir):

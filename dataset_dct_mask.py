@@ -90,20 +90,14 @@ def generate_frequency_mask(ms):
         threshold_value = np.percentile(normalized_band, 80)
 
         # 阈值化处理：小于等于阈值的置为1，其余置为0
-        binary_band = (normalized_band >= threshold_value).astype(np.uint8)
+        binary_band = (normalized_band >= threshold_value).astype(np.uint8) * 255
         frequency_masks[band_idx] = binary_band
     return frequency_masks
 
-def sort_key(file_name):
-    # 使用正则表达式提取文件名中的数字部分
-    match = re.search(r'_(\d+)', file_name)
-    return int(match.group(1)) if match else float('inf')  # 非数字文件排在最后
-
 # 示例使用
-hdf5_file_path = '/home/Shawalt/Demos/ImageFusion/DataSet/WorldView-3/train_wv3.h5'  # 替换为你的 H5 文件路径
-output_dir = '/home/Shawalt/Demos/ImageFusion/FAME-Net/wv3_data_dev'  # 图像保存的文件夹
+output_dir = '/home/Shawalt/Demos/ImageFusion/FAME-Net_back/FAME-Net/'  # 图像保存的文件夹
 
-tiff_file_path = './wv3_data_dev/train/pan/'  # 替换为实际的 TIFF 文件路径
+tiff_file_path = '/home/Shawalt/Demos/ImageFusion/DataSet/NBU_DataSet/Satellite_Dataset/DataSet_TIF/6_WorldView-3/PAN_1024'  # 替换为实际的 TIFF 文件路径
 
  # 遍历目录及其子目录中的所有文件
 
@@ -115,11 +109,16 @@ for root, dirs, files in os.walk(tiff_file_path):
             file_path = os.path.join(root, file)
             tif_files.append(file_path)
 
-for idx, img_path in enumerate(sorted(tif_files, key=sort_key)):
+def sort_key(x):
+    file_name = x.split('/')[-1]
+    return int(file_name.split('.')[0])
+
+tif_files = sorted(tif_files, key=sort_key)
+for idx, img_path in enumerate(tif_files):
     idct_ms = apply_dct_on_bands(img_path, low_frequency_radius=15)
     frequency_masks = generate_frequency_mask(idct_ms)
     c, h, w = frequency_masks.shape
-    output_file_path = os.path.join(output_dir, 'train', 'mask', f'mask_{idx}.tif')
+    output_file_path = os.path.join(output_dir, 'mask', f'{idx+1}.tif')
     with rasterio.open(
             output_file_path,
             'w',
