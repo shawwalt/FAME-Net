@@ -130,7 +130,7 @@ class Solver(BaseSolver):
             idx = math.pow(0.99, (self.epoch - 1))
             para = 1* (idx)
             gl_para = 0
-            if self.epoch > 0.1 * self.nEpochs:
+            if self.epoch > 0.7 * self.nEpochs:
                 gl_para = 0.1
             else:
                 gl_para = 0
