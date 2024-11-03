@@ -104,7 +104,7 @@ class Solver(BaseSolver):
         lib = importlib.import_module('model.' + net_name)
         net = lib.Net
 
-        assert (self.cfg['data']['n_colors']==4)
+        # assert (self.cfg['data']['n_colors']==4)
         self.model = net(
             num_channels=self.cfg['data']['n_colors'], 
             base_filter=32,
@@ -127,11 +127,11 @@ class Solver(BaseSolver):
     def train(self): 
         with tqdm(total=len(self.train_loader), miniters=1,
                 desc='Initial Training Epoch: [{}/{}]'.format(self.epoch, self.nEpochs)) as t:
-            idx = math.pow(0.95, 0.1 * (self.epoch - 1))
+            idx = math.pow(0.99, (self.epoch - 1))
             para = 1* (idx)
             gl_para = 0
-            if self.epoch > 0.05 * self.nEpochs:
-                gl_para = 1
+            if self.epoch > 0.1 * self.nEpochs:
+                gl_para = 0.1
             else:
                 gl_para = 0
             gate_cof = 1
@@ -173,8 +173,8 @@ class Solver(BaseSolver):
             torch.cuda.empty_cache() 
             self.scheduler.step()
             self.records['Loss'].append(epoch_loss / len(self.train_loader))
-            self.writer.add_image('image1', ms_image[0], self.epoch)
-            self.writer.add_image('image2', y[0], self.epoch)
+            self.writer.add_image('image1', ms_image[0][1:3, :], self.epoch)
+            self.writer.add_image('image2', y[0][1:3, :], self.epoch)
             self.writer.add_image('image3', pan_image[0], self.epoch)
             save_config(self.log_name, 'Initial Training Epoch {}: Loss={:.4f}'.format(self.epoch, self.records['Loss'][-1]))
             self.writer.add_scalar('Loss_epoch', self.records['Loss'][-1], self.epoch)

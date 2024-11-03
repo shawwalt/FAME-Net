@@ -10,6 +10,9 @@
 from utils.config import get_config
 from solver.moesolver import Solver
 import argparse
+import warnings
+
+warnings.filterwarnings('ignore') # 抑制ReSize默认参数改版的警告
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='N_SR')

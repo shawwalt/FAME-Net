@@ -17,8 +17,8 @@ log_dir: logs/
 
 seed: 123 #123
 checkpoint: weights
-data_dir_train: /home/Shawalt/Demos/ImageFusion/DataSet/NBU_DataSet/Satellite_Dataset/DataSet_TIF/6_WorldView-3
-data_dir_eval: /home/Shawalt/Demos/ImageFusion/DataSet/NBU_DataSet/Satellite_Dataset/DataSet_TIF/6_WorldView-3
+data_dir_train: /home/Shawalt/Demos/ImageFusion/DataSet/NBU_DataSet/Satellite_Dataset/Dataset/6_WorldView-3
+data_dir_eval: /home/Shawalt/Demos/ImageFusion/DataSet/NBU_DataSet/Satellite_Dataset/Dataset/6_WorldView-3
 
 source_ms: MS_256
 source_pan: PAN_1024
@@ -43,7 +43,7 @@ data:
   batch_size: 4 #4
   patch_size: 32
   data_augmentation: False
-  n_colors: 4
+  n_colors: 8
   rgb_range: 255
   normalize : False
   

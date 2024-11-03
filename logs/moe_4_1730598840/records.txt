@@ -1,0 +1,1204 @@
+Train dataset has 112 images and 28 batches.
+Val dataset has 32 images and 8 batches.
+Model parameters: 1246536
+Initial Training Epoch 1: Loss=0.3514
+Initial Training Epoch 2: Loss=0.2207
+Initial Training Epoch 3: Loss=0.1931
+Initial Training Epoch 4: Loss=0.1763
+Initial Training Epoch 5: Loss=0.1597
+Val Epoch 5: PSNR=29.2021, SSIM=0.836460,QNR=0.7542, DS:0.1490,D_L:0.1137
+Initial Training Epoch 6: Loss=0.1550
+Initial Training Epoch 7: Loss=0.1515
+Initial Training Epoch 8: Loss=0.1507
+Initial Training Epoch 9: Loss=0.1479
+Initial Training Epoch 10: Loss=0.1410
+Val Epoch 10: PSNR=30.8590, SSIM=0.871972,QNR=0.7802, DS:0.1640,D_L:0.0667
+Initial Training Epoch 11: Loss=0.1445
+Initial Training Epoch 12: Loss=0.1366
+Initial Training Epoch 13: Loss=0.1402
+Initial Training Epoch 14: Loss=0.1383
+Initial Training Epoch 15: Loss=0.1341
+Val Epoch 15: PSNR=31.4065, SSIM=0.881838,QNR=0.7700, DS:0.1757,D_L:0.0650
+Initial Training Epoch 16: Loss=0.1328
+Initial Training Epoch 17: Loss=0.1298
+Initial Training Epoch 18: Loss=0.1276
+Initial Training Epoch 19: Loss=0.1275
+Initial Training Epoch 20: Loss=0.1230
+Val Epoch 20: PSNR=31.5021, SSIM=0.896223,QNR=0.7786, DS:0.1621,D_L:0.0698
+Initial Training Epoch 21: Loss=0.1249
+Initial Training Epoch 22: Loss=0.1269
+Initial Training Epoch 23: Loss=0.1234
+Initial Training Epoch 24: Loss=0.1187
+Initial Training Epoch 25: Loss=0.1206
+Val Epoch 25: PSNR=31.3434, SSIM=0.892668,QNR=0.7929, DS:0.1584,D_L:0.0572
+Initial Training Epoch 26: Loss=0.1188
+Initial Training Epoch 27: Loss=0.1186
+Initial Training Epoch 28: Loss=0.1155
+Initial Training Epoch 29: Loss=0.1127
+Initial Training Epoch 30: Loss=0.1146
+Val Epoch 30: PSNR=32.4559, SSIM=0.901166,QNR=0.8084, DS:0.1408,D_L:0.0581
+Initial Training Epoch 31: Loss=0.1120
+Initial Training Epoch 32: Loss=0.1101
+Initial Training Epoch 33: Loss=0.1087
+Initial Training Epoch 34: Loss=0.1082
+Initial Training Epoch 35: Loss=0.1064
+Val Epoch 35: PSNR=31.9209, SSIM=0.892868,QNR=0.8007, DS:0.1577,D_L:0.0481
+Initial Training Epoch 36: Loss=0.1062
+Initial Training Epoch 37: Loss=0.1062
+Initial Training Epoch 38: Loss=0.1064
+Initial Training Epoch 39: Loss=0.1044
+Initial Training Epoch 40: Loss=0.1025
+Val Epoch 40: PSNR=32.4420, SSIM=0.899086,QNR=0.7849, DS:0.1623,D_L:0.0627
+Initial Training Epoch 41: Loss=0.1042
+Initial Training Epoch 42: Loss=0.1009
+Initial Training Epoch 43: Loss=0.1010
+Initial Training Epoch 44: Loss=0.1000
+Initial Training Epoch 45: Loss=0.0990
+Val Epoch 45: PSNR=31.9313, SSIM=0.898543,QNR=0.7970, DS:0.1570,D_L:0.0529
+Initial Training Epoch 46: Loss=0.0992
+Initial Training Epoch 47: Loss=0.0973
+Initial Training Epoch 48: Loss=0.0964
+Initial Training Epoch 49: Loss=0.0940
+Initial Training Epoch 50: Loss=0.0952
+Val Epoch 50: PSNR=32.7258, SSIM=0.904154,QNR=0.7940, DS:0.1522,D_L:0.0619
+Initial Training Epoch 51: Loss=0.0951
+Initial Training Epoch 52: Loss=0.0935
+Initial Training Epoch 53: Loss=0.0908
+Initial Training Epoch 54: Loss=0.0892
+Initial Training Epoch 55: Loss=0.0900
+Val Epoch 55: PSNR=33.1412, SSIM=0.903425,QNR=0.8003, DS:0.1485,D_L:0.0588
+Initial Training Epoch 56: Loss=0.0885
+Initial Training Epoch 57: Loss=0.0895
+Initial Training Epoch 58: Loss=0.0883
+Initial Training Epoch 59: Loss=0.0880
+Initial Training Epoch 60: Loss=0.0841
+Val Epoch 60: PSNR=33.5665, SSIM=0.913762,QNR=0.8089, DS:0.1429,D_L:0.0553
+Initial Training Epoch 61: Loss=0.0855
+Initial Training Epoch 62: Loss=0.0847
+Initial Training Epoch 63: Loss=0.0829
+Initial Training Epoch 64: Loss=0.0839
+Initial Training Epoch 65: Loss=0.0822
+Val Epoch 65: PSNR=32.9015, SSIM=0.903782,QNR=0.7942, DS:0.1528,D_L:0.0604
+Initial Training Epoch 66: Loss=0.0818
+Initial Training Epoch 67: Loss=0.0815
+Initial Training Epoch 68: Loss=0.0811
+Initial Training Epoch 69: Loss=0.0801
+Initial Training Epoch 70: Loss=0.0792
+Val Epoch 70: PSNR=32.8997, SSIM=0.908609,QNR=0.8015, DS:0.1516,D_L:0.0542
+Initial Training Epoch 71: Loss=0.0788
+Initial Training Epoch 72: Loss=0.0784
+Initial Training Epoch 73: Loss=0.0764
+Initial Training Epoch 74: Loss=0.0764
+Initial Training Epoch 75: Loss=0.0756
+Val Epoch 75: PSNR=32.4226, SSIM=0.904446,QNR=0.8099, DS:0.1445,D_L:0.0525
+Initial Training Epoch 76: Loss=0.0761
+Initial Training Epoch 77: Loss=0.0737
+Initial Training Epoch 78: Loss=0.0748
+Initial Training Epoch 79: Loss=0.0747
+Initial Training Epoch 80: Loss=0.0727
+Val Epoch 80: PSNR=33.0378, SSIM=0.912153,QNR=0.8013, DS:0.1547,D_L:0.0507
+Initial Training Epoch 81: Loss=0.0748
+Initial Training Epoch 82: Loss=0.0707
+Initial Training Epoch 83: Loss=0.0702
+Initial Training Epoch 84: Loss=0.0711
+Initial Training Epoch 85: Loss=0.0704
+Val Epoch 85: PSNR=32.6768, SSIM=0.903416,QNR=0.8059, DS:0.1482,D_L:0.0525
+Initial Training Epoch 86: Loss=0.0699
+Initial Training Epoch 87: Loss=0.0705
+Initial Training Epoch 88: Loss=0.0667
+Initial Training Epoch 89: Loss=0.0675
+Initial Training Epoch 90: Loss=0.0676
+Val Epoch 90: PSNR=32.7371, SSIM=0.905190,QNR=0.7951, DS:0.1626,D_L:0.0493
+Initial Training Epoch 91: Loss=0.0683
+Initial Training Epoch 92: Loss=0.0673
+Initial Training Epoch 93: Loss=0.0663
+Initial Training Epoch 94: Loss=0.0649
+Initial Training Epoch 95: Loss=0.0663
+Val Epoch 95: PSNR=33.0561, SSIM=0.905931,QNR=0.8047, DS:0.1524,D_L:0.0495
+Initial Training Epoch 96: Loss=0.0649
+Initial Training Epoch 97: Loss=0.0639
+Initial Training Epoch 98: Loss=0.0639
+Initial Training Epoch 99: Loss=0.0643
+Initial Training Epoch 100: Loss=0.0621
+Val Epoch 100: PSNR=32.7421, SSIM=0.908253,QNR=0.8215, DS:0.1314,D_L:0.0535
+Initial Training Epoch 101: Loss=0.4961
+Initial Training Epoch 102: Loss=0.4719
+Initial Training Epoch 103: Loss=0.4656
+Initial Training Epoch 104: Loss=0.4648
+Initial Training Epoch 105: Loss=0.4623
+Val Epoch 105: PSNR=32.3044, SSIM=0.904321,QNR=0.8019, DS:0.1458,D_L:0.0599
+Initial Training Epoch 106: Loss=0.4616
+Initial Training Epoch 107: Loss=0.4610
+Initial Training Epoch 108: Loss=0.4600
+Initial Training Epoch 109: Loss=0.4603
+Initial Training Epoch 110: Loss=0.4603
+Val Epoch 110: PSNR=32.5750, SSIM=0.899247,QNR=0.8019, DS:0.1660,D_L:0.0377
+Initial Training Epoch 111: Loss=0.4594
+Initial Training Epoch 112: Loss=0.4586
+Initial Training Epoch 113: Loss=0.4567
+Initial Training Epoch 114: Loss=0.4565
+Initial Training Epoch 115: Loss=0.4570
+Val Epoch 115: PSNR=32.7276, SSIM=0.900850,QNR=0.8206, DS:0.1405,D_L:0.0445
+Initial Training Epoch 116: Loss=0.4564
+Initial Training Epoch 117: Loss=0.4552
+Initial Training Epoch 118: Loss=0.4559
+Initial Training Epoch 119: Loss=0.4549
+Initial Training Epoch 120: Loss=0.4542
+Val Epoch 120: PSNR=33.1224, SSIM=0.913439,QNR=0.8173, DS:0.1442,D_L:0.0438
+Initial Training Epoch 121: Loss=0.4546
+Initial Training Epoch 122: Loss=0.4530
+Initial Training Epoch 123: Loss=0.4541
+Initial Training Epoch 124: Loss=0.4535
+Initial Training Epoch 125: Loss=0.4524
+Val Epoch 125: PSNR=33.4522, SSIM=0.906878,QNR=0.8186, DS:0.1484,D_L:0.0375
+Initial Training Epoch 126: Loss=0.4514
+Initial Training Epoch 127: Loss=0.4517
+Initial Training Epoch 128: Loss=0.4507
+Initial Training Epoch 129: Loss=0.4510
+Initial Training Epoch 130: Loss=0.4524
+Val Epoch 130: PSNR=33.2447, SSIM=0.911558,QNR=0.8092, DS:0.1467,D_L:0.0497
+Initial Training Epoch 131: Loss=0.4493
+Initial Training Epoch 132: Loss=0.4496
+Initial Training Epoch 133: Loss=0.4499
+Initial Training Epoch 134: Loss=0.4487
+Initial Training Epoch 135: Loss=0.4484
+Val Epoch 135: PSNR=32.9680, SSIM=0.909483,QNR=0.8268, DS:0.1303,D_L:0.0481
+Initial Training Epoch 136: Loss=0.4483
+Initial Training Epoch 137: Loss=0.4481
+Initial Training Epoch 138: Loss=0.4488
+Initial Training Epoch 139: Loss=0.4476
+Initial Training Epoch 140: Loss=0.4468
+Val Epoch 140: PSNR=32.7718, SSIM=0.910665,QNR=0.8090, DS:0.1444,D_L:0.0532
+Initial Training Epoch 141: Loss=0.4459
+Initial Training Epoch 142: Loss=0.4463
+Initial Training Epoch 143: Loss=0.4453
+Initial Training Epoch 144: Loss=0.4450
+Initial Training Epoch 145: Loss=0.4465
+Val Epoch 145: PSNR=33.1045, SSIM=0.912693,QNR=0.8136, DS:0.1468,D_L:0.0457
+Initial Training Epoch 146: Loss=0.4456
+Initial Training Epoch 147: Loss=0.4453
+Initial Training Epoch 148: Loss=0.4453
+Initial Training Epoch 149: Loss=0.4441
+Initial Training Epoch 150: Loss=0.4445
+Val Epoch 150: PSNR=34.1943, SSIM=0.918963,QNR=0.8144, DS:0.1392,D_L:0.0525
+Initial Training Epoch 151: Loss=0.4435
+Initial Training Epoch 152: Loss=0.4429
+Initial Training Epoch 153: Loss=0.4430
+Initial Training Epoch 154: Loss=0.4426
+Initial Training Epoch 155: Loss=0.4420
+Val Epoch 155: PSNR=33.2628, SSIM=0.917323,QNR=0.8204, DS:0.1467,D_L:0.0371
+Initial Training Epoch 156: Loss=0.4437
+Initial Training Epoch 157: Loss=0.4418
+Initial Training Epoch 158: Loss=0.4411
+Initial Training Epoch 159: Loss=0.4409
+Initial Training Epoch 160: Loss=0.4411
+Val Epoch 160: PSNR=33.9818, SSIM=0.917823,QNR=0.8299, DS:0.1271,D_L:0.0481
+Initial Training Epoch 161: Loss=0.4407
+Initial Training Epoch 162: Loss=0.4395
+Initial Training Epoch 163: Loss=0.4403
+Initial Training Epoch 164: Loss=0.4403
+Initial Training Epoch 165: Loss=0.4395
+Val Epoch 165: PSNR=33.4658, SSIM=0.914968,QNR=0.8205, DS:0.1421,D_L:0.0423
+Initial Training Epoch 166: Loss=0.4399
+Initial Training Epoch 167: Loss=0.4388
+Initial Training Epoch 168: Loss=0.4391
+Initial Training Epoch 169: Loss=0.4393
+Initial Training Epoch 170: Loss=0.4383
+Val Epoch 170: PSNR=33.6653, SSIM=0.918187,QNR=0.8207, DS:0.1366,D_L:0.0488
+Initial Training Epoch 171: Loss=0.4374
+Initial Training Epoch 172: Loss=0.4379
+Initial Training Epoch 173: Loss=0.4383
+Initial Training Epoch 174: Loss=0.4384
+Initial Training Epoch 175: Loss=0.4380
+Val Epoch 175: PSNR=33.6422, SSIM=0.913051,QNR=0.8249, DS:0.1336,D_L:0.0470
+Initial Training Epoch 176: Loss=0.4367
+Initial Training Epoch 177: Loss=0.4362
+Initial Training Epoch 178: Loss=0.4368
+Initial Training Epoch 179: Loss=0.4369
+Initial Training Epoch 180: Loss=0.4364
+Val Epoch 180: PSNR=33.5378, SSIM=0.916123,QNR=0.8126, DS:0.1473,D_L:0.0459
+Initial Training Epoch 181: Loss=0.4359
+Initial Training Epoch 182: Loss=0.4357
+Initial Training Epoch 183: Loss=0.4361
+Initial Training Epoch 184: Loss=0.4360
+Initial Training Epoch 185: Loss=0.4355
+Val Epoch 185: PSNR=33.7720, SSIM=0.917443,QNR=0.8137, DS:0.1446,D_L:0.0481
+Initial Training Epoch 186: Loss=0.4353
+Initial Training Epoch 187: Loss=0.4343
+Initial Training Epoch 188: Loss=0.4352
+Initial Training Epoch 189: Loss=0.4347
+Initial Training Epoch 190: Loss=0.4339
+Val Epoch 190: PSNR=32.6893, SSIM=0.907754,QNR=0.7995, DS:0.1657,D_L:0.0407
+Initial Training Epoch 191: Loss=0.4341
+Initial Training Epoch 192: Loss=0.4342
+Initial Training Epoch 193: Loss=0.4335
+Initial Training Epoch 194: Loss=0.4330
+Initial Training Epoch 195: Loss=0.4336
+Val Epoch 195: PSNR=33.1478, SSIM=0.919274,QNR=0.7940, DS:0.1589,D_L:0.0544
+Initial Training Epoch 196: Loss=0.4327
+Initial Training Epoch 197: Loss=0.4327
+Initial Training Epoch 198: Loss=0.4329
+Initial Training Epoch 199: Loss=0.4325
+Initial Training Epoch 200: Loss=0.4322
+Val Epoch 200: PSNR=33.5134, SSIM=0.912388,QNR=0.7963, DS:0.1584,D_L:0.0525
+Initial Training Epoch 201: Loss=0.4324
+Initial Training Epoch 202: Loss=0.4328
+Initial Training Epoch 203: Loss=0.4321
+Initial Training Epoch 204: Loss=0.4313
+Initial Training Epoch 205: Loss=0.4315
+Val Epoch 205: PSNR=33.8063, SSIM=0.914850,QNR=0.8149, DS:0.1445,D_L:0.0467
+Initial Training Epoch 206: Loss=0.4309
+Initial Training Epoch 207: Loss=0.4311
+Initial Training Epoch 208: Loss=0.4311
+Initial Training Epoch 209: Loss=0.4308
+Initial Training Epoch 210: Loss=0.4312
+Val Epoch 210: PSNR=33.6918, SSIM=0.920592,QNR=0.8082, DS:0.1507,D_L:0.0473
+Initial Training Epoch 211: Loss=0.4305
+Initial Training Epoch 212: Loss=0.4298
+Initial Training Epoch 213: Loss=0.4293
+Initial Training Epoch 214: Loss=0.4299
+Initial Training Epoch 215: Loss=0.4305
+Val Epoch 215: PSNR=33.8040, SSIM=0.920847,QNR=0.8216, DS:0.1397,D_L:0.0439
+Initial Training Epoch 216: Loss=0.4295
+Initial Training Epoch 217: Loss=0.4288
+Initial Training Epoch 218: Loss=0.4298
+Initial Training Epoch 219: Loss=0.4300
+Initial Training Epoch 220: Loss=0.4297
+Val Epoch 220: PSNR=32.5192, SSIM=0.909027,QNR=0.7988, DS:0.1585,D_L:0.0494
+Initial Training Epoch 221: Loss=0.4297
+Initial Training Epoch 222: Loss=0.4293
+Initial Training Epoch 223: Loss=0.4294
+Initial Training Epoch 224: Loss=0.4287
+Initial Training Epoch 225: Loss=0.4290
+Val Epoch 225: PSNR=33.7170, SSIM=0.917421,QNR=0.8156, DS:0.1378,D_L:0.0538
+Initial Training Epoch 226: Loss=0.4281
+Initial Training Epoch 227: Loss=0.4279
+Initial Training Epoch 228: Loss=0.4279
+Initial Training Epoch 229: Loss=0.4277
+Initial Training Epoch 230: Loss=0.4272
+Val Epoch 230: PSNR=33.3883, SSIM=0.911178,QNR=0.7995, DS:0.1580,D_L:0.0495
+Initial Training Epoch 231: Loss=0.4275
+Initial Training Epoch 232: Loss=0.4277
+Initial Training Epoch 233: Loss=0.4274
+Initial Training Epoch 234: Loss=0.4270
+Initial Training Epoch 235: Loss=0.4271
+Val Epoch 235: PSNR=33.4063, SSIM=0.912196,QNR=0.8045, DS:0.1532,D_L:0.0487
+Initial Training Epoch 236: Loss=0.4275
+Initial Training Epoch 237: Loss=0.4269
+Initial Training Epoch 238: Loss=0.4266
+Initial Training Epoch 239: Loss=0.4267
+Initial Training Epoch 240: Loss=0.4261
+Val Epoch 240: PSNR=32.6122, SSIM=0.913904,QNR=0.7949, DS:0.1614,D_L:0.0512
+Initial Training Epoch 241: Loss=0.4268
+Initial Training Epoch 242: Loss=0.4266
+Initial Training Epoch 243: Loss=0.4263
+Initial Training Epoch 244: Loss=0.4262
+Initial Training Epoch 245: Loss=0.4258
+Val Epoch 245: PSNR=33.3372, SSIM=0.921150,QNR=0.8121, DS:0.1467,D_L:0.0472
+Initial Training Epoch 246: Loss=0.4260
+Initial Training Epoch 247: Loss=0.4254
+Initial Training Epoch 248: Loss=0.4255
+Initial Training Epoch 249: Loss=0.4250
+Initial Training Epoch 250: Loss=0.4253
+Val Epoch 250: PSNR=33.5871, SSIM=0.917564,QNR=0.8029, DS:0.1530,D_L:0.0506
+Initial Training Epoch 251: Loss=0.4251
+Initial Training Epoch 252: Loss=0.4253
+Initial Training Epoch 253: Loss=0.4245
+Initial Training Epoch 254: Loss=0.4250
+Initial Training Epoch 255: Loss=0.4249
+Val Epoch 255: PSNR=33.3439, SSIM=0.920537,QNR=0.8009, DS:0.1558,D_L:0.0498
+Initial Training Epoch 256: Loss=0.4244
+Initial Training Epoch 257: Loss=0.4249
+Initial Training Epoch 258: Loss=0.4247
+Initial Training Epoch 259: Loss=0.4243
+Initial Training Epoch 260: Loss=0.4246
+Val Epoch 260: PSNR=33.4492, SSIM=0.922091,QNR=0.8073, DS:0.1486,D_L:0.0498
+Initial Training Epoch 261: Loss=0.4238
+Initial Training Epoch 262: Loss=0.4240
+Initial Training Epoch 263: Loss=0.4242
+Initial Training Epoch 264: Loss=0.4239
+Initial Training Epoch 265: Loss=0.4241
+Val Epoch 265: PSNR=34.0612, SSIM=0.923290,QNR=0.8201, DS:0.1346,D_L:0.0510
+Initial Training Epoch 266: Loss=0.4240
+Initial Training Epoch 267: Loss=0.4237
+Initial Training Epoch 268: Loss=0.4241
+Initial Training Epoch 269: Loss=0.4233
+Initial Training Epoch 270: Loss=0.4233
+Val Epoch 270: PSNR=33.3140, SSIM=0.922201,QNR=0.8085, DS:0.1528,D_L:0.0440
+Initial Training Epoch 271: Loss=0.4227
+Initial Training Epoch 272: Loss=0.4231
+Initial Training Epoch 273: Loss=0.4233
+Initial Training Epoch 274: Loss=0.4228
+Initial Training Epoch 275: Loss=0.4230
+Val Epoch 275: PSNR=32.9834, SSIM=0.916005,QNR=0.8053, DS:0.1533,D_L:0.0479
+Initial Training Epoch 276: Loss=0.4230
+Initial Training Epoch 277: Loss=0.4226
+Initial Training Epoch 278: Loss=0.4228
+Initial Training Epoch 279: Loss=0.4221
+Initial Training Epoch 280: Loss=0.4222
+Val Epoch 280: PSNR=33.4326, SSIM=0.924522,QNR=0.8122, DS:0.1432,D_L:0.0508
+Initial Training Epoch 281: Loss=0.4221
+Initial Training Epoch 282: Loss=0.4218
+Initial Training Epoch 283: Loss=0.4227
+Initial Training Epoch 284: Loss=0.4226
+Initial Training Epoch 285: Loss=0.4222
+Val Epoch 285: PSNR=32.5026, SSIM=0.915151,QNR=0.7842, DS:0.1677,D_L:0.0567
+Initial Training Epoch 286: Loss=0.4222
+Initial Training Epoch 287: Loss=0.4221
+Initial Training Epoch 288: Loss=0.4218
+Initial Training Epoch 289: Loss=0.4220
+Initial Training Epoch 290: Loss=0.4216
+Val Epoch 290: PSNR=33.6754, SSIM=0.914106,QNR=0.8036, DS:0.1585,D_L:0.0440
+Initial Training Epoch 291: Loss=0.4215
+Initial Training Epoch 292: Loss=0.4215
+Initial Training Epoch 293: Loss=0.4215
+Initial Training Epoch 294: Loss=0.4213
+Initial Training Epoch 295: Loss=0.4213
+Val Epoch 295: PSNR=34.1822, SSIM=0.926578,QNR=0.8193, DS:0.1401,D_L:0.0456
+Initial Training Epoch 296: Loss=0.4214
+Initial Training Epoch 297: Loss=0.4209
+Initial Training Epoch 298: Loss=0.4214
+Initial Training Epoch 299: Loss=0.4211
+Initial Training Epoch 300: Loss=0.4212
+Val Epoch 300: PSNR=34.1187, SSIM=0.925249,QNR=0.8216, DS:0.1314,D_L:0.0524
+Initial Training Epoch 301: Loss=0.4210
+Initial Training Epoch 302: Loss=0.4212
+Initial Training Epoch 303: Loss=0.4205
+Initial Training Epoch 304: Loss=0.4211
+Initial Training Epoch 305: Loss=0.4206
+Val Epoch 305: PSNR=33.6369, SSIM=0.922725,QNR=0.8037, DS:0.1518,D_L:0.0507
+Initial Training Epoch 306: Loss=0.4209
+Initial Training Epoch 307: Loss=0.4209
+Initial Training Epoch 308: Loss=0.4208
+Initial Training Epoch 309: Loss=0.4209
+Initial Training Epoch 310: Loss=0.4205
+Val Epoch 310: PSNR=33.3696, SSIM=0.916000,QNR=0.8048, DS:0.1573,D_L:0.0441
+Initial Training Epoch 311: Loss=0.4200
+Initial Training Epoch 312: Loss=0.4205
+Initial Training Epoch 313: Loss=0.4204
+Initial Training Epoch 314: Loss=0.4201
+Initial Training Epoch 315: Loss=0.4202
+Val Epoch 315: PSNR=33.1146, SSIM=0.915585,QNR=0.8080, DS:0.1495,D_L:0.0488
+Initial Training Epoch 316: Loss=0.4203
+Initial Training Epoch 317: Loss=0.4199
+Initial Training Epoch 318: Loss=0.4201
+Initial Training Epoch 319: Loss=0.4199
+Initial Training Epoch 320: Loss=0.4199
+Val Epoch 320: PSNR=33.9475, SSIM=0.925510,QNR=0.8118, DS:0.1414,D_L:0.0528
+Initial Training Epoch 321: Loss=0.4208
+Initial Training Epoch 322: Loss=0.4215
+Initial Training Epoch 323: Loss=0.4210
+Initial Training Epoch 324: Loss=0.4203
+Initial Training Epoch 325: Loss=0.4199
+Val Epoch 325: PSNR=34.3089, SSIM=0.922381,QNR=0.8127, DS:0.1423,D_L:0.0509
+Initial Training Epoch 326: Loss=0.4200
+Initial Training Epoch 327: Loss=0.4197
+Initial Training Epoch 328: Loss=0.4197
+Initial Training Epoch 329: Loss=0.4195
+Initial Training Epoch 330: Loss=0.4196
+Val Epoch 330: PSNR=33.7440, SSIM=0.918798,QNR=0.8125, DS:0.1505,D_L:0.0421
+Initial Training Epoch 331: Loss=0.4196
+Initial Training Epoch 332: Loss=0.4196
+Initial Training Epoch 333: Loss=0.4194
+Initial Training Epoch 334: Loss=0.4192
+Initial Training Epoch 335: Loss=0.4192
+Val Epoch 335: PSNR=33.7467, SSIM=0.920887,QNR=0.8185, DS:0.1433,D_L:0.0438
+Initial Training Epoch 336: Loss=0.4190
+Initial Training Epoch 337: Loss=0.4192
+Initial Training Epoch 338: Loss=0.4192
+Initial Training Epoch 339: Loss=0.4190
+Initial Training Epoch 340: Loss=0.4188
+Val Epoch 340: PSNR=33.6295, SSIM=0.919502,QNR=0.8041, DS:0.1593,D_L:0.0421
+Initial Training Epoch 341: Loss=0.4191
+Initial Training Epoch 342: Loss=0.4189
+Initial Training Epoch 343: Loss=0.4192
+Initial Training Epoch 344: Loss=0.4188
+Initial Training Epoch 345: Loss=0.4189
+Val Epoch 345: PSNR=33.5254, SSIM=0.922823,QNR=0.8095, DS:0.1495,D_L:0.0477
+Initial Training Epoch 346: Loss=0.4186
+Initial Training Epoch 347: Loss=0.4183
+Initial Training Epoch 348: Loss=0.4186
+Initial Training Epoch 349: Loss=0.4187
+Initial Training Epoch 350: Loss=0.4185
+Val Epoch 350: PSNR=33.7312, SSIM=0.927816,QNR=0.8223, DS:0.1303,D_L:0.0527
+Initial Training Epoch 351: Loss=0.4186
+Initial Training Epoch 352: Loss=0.4188
+Initial Training Epoch 353: Loss=0.4183
+Initial Training Epoch 354: Loss=0.4184
+Initial Training Epoch 355: Loss=0.4183
+Val Epoch 355: PSNR=34.0007, SSIM=0.918169,QNR=0.8143, DS:0.1451,D_L:0.0457
+Initial Training Epoch 356: Loss=0.4185
+Initial Training Epoch 357: Loss=0.4186
+Initial Training Epoch 358: Loss=0.4182
+Initial Training Epoch 359: Loss=0.4182
+Initial Training Epoch 360: Loss=0.4182
+Val Epoch 360: PSNR=34.7616, SSIM=0.927287,QNR=0.8239, DS:0.1324,D_L:0.0492
+Initial Training Epoch 361: Loss=0.4180
+Initial Training Epoch 362: Loss=0.4180
+Initial Training Epoch 363: Loss=0.4180
+Initial Training Epoch 364: Loss=0.4179
+Initial Training Epoch 365: Loss=0.4177
+Val Epoch 365: PSNR=33.6288, SSIM=0.923917,QNR=0.7978, DS:0.1597,D_L:0.0491
+Initial Training Epoch 366: Loss=0.4183
+Initial Training Epoch 367: Loss=0.4181
+Initial Training Epoch 368: Loss=0.4179
+Initial Training Epoch 369: Loss=0.4177
+Initial Training Epoch 370: Loss=0.4177
+Val Epoch 370: PSNR=34.3135, SSIM=0.920436,QNR=0.8020, DS:0.1617,D_L:0.0414
+Initial Training Epoch 371: Loss=0.4178
+Initial Training Epoch 372: Loss=0.4178
+Initial Training Epoch 373: Loss=0.4176
+Initial Training Epoch 374: Loss=0.4177
+Initial Training Epoch 375: Loss=0.4176
+Val Epoch 375: PSNR=33.7252, SSIM=0.918408,QNR=0.7983, DS:0.1592,D_L:0.0500
+Initial Training Epoch 376: Loss=0.4173
+Initial Training Epoch 377: Loss=0.4176
+Initial Training Epoch 378: Loss=0.4179
+Initial Training Epoch 379: Loss=0.4174
+Initial Training Epoch 380: Loss=0.4172
+Val Epoch 380: PSNR=34.3973, SSIM=0.922368,QNR=0.7994, DS:0.1605,D_L:0.0465
+Initial Training Epoch 381: Loss=0.4173
+Initial Training Epoch 382: Loss=0.4176
+Initial Training Epoch 383: Loss=0.4172
+Initial Training Epoch 384: Loss=0.4171
+Initial Training Epoch 385: Loss=0.4170
+Val Epoch 385: PSNR=33.4287, SSIM=0.919653,QNR=0.8082, DS:0.1570,D_L:0.0405
+Initial Training Epoch 386: Loss=0.4172
+Initial Training Epoch 387: Loss=0.4173
+Initial Training Epoch 388: Loss=0.4173
+Initial Training Epoch 389: Loss=0.4176
+Initial Training Epoch 390: Loss=0.4172
+Val Epoch 390: PSNR=33.6913, SSIM=0.927112,QNR=0.8139, DS:0.1474,D_L:0.0441
+Initial Training Epoch 391: Loss=0.4169
+Initial Training Epoch 392: Loss=0.4170
+Initial Training Epoch 393: Loss=0.4171
+Initial Training Epoch 394: Loss=0.4170
+Initial Training Epoch 395: Loss=0.4171
+Val Epoch 395: PSNR=33.9679, SSIM=0.924827,QNR=0.8151, DS:0.1431,D_L:0.0480
+Initial Training Epoch 396: Loss=0.4170
+Initial Training Epoch 397: Loss=0.4173
+Initial Training Epoch 398: Loss=0.4172
+Initial Training Epoch 399: Loss=0.4169
+Initial Training Epoch 400: Loss=0.4167
+Val Epoch 400: PSNR=34.1106, SSIM=0.924097,QNR=0.8224, DS:0.1365,D_L:0.0463
+Initial Training Epoch 401: Loss=0.4168
+Initial Training Epoch 402: Loss=0.4168
+Initial Training Epoch 403: Loss=0.4165
+Initial Training Epoch 404: Loss=0.4166
+Initial Training Epoch 405: Loss=0.4169
+Val Epoch 405: PSNR=34.2903, SSIM=0.923348,QNR=0.8040, DS:0.1599,D_L:0.0423
+Initial Training Epoch 406: Loss=0.4166
+Initial Training Epoch 407: Loss=0.4167
+Initial Training Epoch 408: Loss=0.4166
+Initial Training Epoch 409: Loss=0.4168
+Initial Training Epoch 410: Loss=0.4165
+Val Epoch 410: PSNR=34.1181, SSIM=0.921751,QNR=0.8190, DS:0.1437,D_L:0.0429
+Initial Training Epoch 411: Loss=0.4164
+Initial Training Epoch 412: Loss=0.4165
+Initial Training Epoch 413: Loss=0.4164
+Initial Training Epoch 414: Loss=0.4164
+Initial Training Epoch 415: Loss=0.4165
+Val Epoch 415: PSNR=34.2544, SSIM=0.926288,QNR=0.8278, DS:0.1414,D_L:0.0350
+Initial Training Epoch 416: Loss=0.4168
+Initial Training Epoch 417: Loss=0.4165
+Initial Training Epoch 418: Loss=0.4165
+Initial Training Epoch 419: Loss=0.4167
+Initial Training Epoch 420: Loss=0.4164
+Val Epoch 420: PSNR=33.5200, SSIM=0.914247,QNR=0.8204, DS:0.1459,D_L:0.0391
+Initial Training Epoch 421: Loss=0.4161
+Initial Training Epoch 422: Loss=0.4164
+Initial Training Epoch 423: Loss=0.4161
+Initial Training Epoch 424: Loss=0.4165
+Initial Training Epoch 425: Loss=0.4163
+Val Epoch 425: PSNR=34.0904, SSIM=0.926836,QNR=0.8287, DS:0.1366,D_L:0.0392
+Initial Training Epoch 426: Loss=0.4164
+Initial Training Epoch 427: Loss=0.4160
+Initial Training Epoch 428: Loss=0.4163
+Initial Training Epoch 429: Loss=0.4160
+Initial Training Epoch 430: Loss=0.4160
+Val Epoch 430: PSNR=34.1669, SSIM=0.926157,QNR=0.8224, DS:0.1336,D_L:0.0497
+Initial Training Epoch 431: Loss=0.4161
+Initial Training Epoch 432: Loss=0.4161
+Initial Training Epoch 433: Loss=0.4161
+Initial Training Epoch 434: Loss=0.4163
+Initial Training Epoch 435: Loss=0.4161
+Val Epoch 435: PSNR=34.0233, SSIM=0.924082,QNR=0.8289, DS:0.1322,D_L:0.0438
+Initial Training Epoch 436: Loss=0.4160
+Initial Training Epoch 437: Loss=0.4160
+Initial Training Epoch 438: Loss=0.4159
+Initial Training Epoch 439: Loss=0.4164
+Initial Training Epoch 440: Loss=0.4161
+Val Epoch 440: PSNR=34.0343, SSIM=0.926687,QNR=0.8349, DS:0.1301,D_L:0.0392
+Initial Training Epoch 441: Loss=0.4162
+Initial Training Epoch 442: Loss=0.4161
+Initial Training Epoch 443: Loss=0.4160
+Initial Training Epoch 444: Loss=0.4158
+Initial Training Epoch 445: Loss=0.4159
+Val Epoch 445: PSNR=34.3498, SSIM=0.923526,QNR=0.8179, DS:0.1407,D_L:0.0471
+Initial Training Epoch 446: Loss=0.4158
+Initial Training Epoch 447: Loss=0.4160
+Initial Training Epoch 448: Loss=0.4158
+Initial Training Epoch 449: Loss=0.4157
+Initial Training Epoch 450: Loss=0.4157
+Val Epoch 450: PSNR=32.9080, SSIM=0.920310,QNR=0.8131, DS:0.1513,D_L:0.0408
+Initial Training Epoch 451: Loss=0.4158
+Initial Training Epoch 452: Loss=0.4161
+Initial Training Epoch 453: Loss=0.4161
+Initial Training Epoch 454: Loss=0.4158
+Initial Training Epoch 455: Loss=0.4157
+Val Epoch 455: PSNR=33.6747, SSIM=0.920124,QNR=0.8109, DS:0.1527,D_L:0.0423
+Initial Training Epoch 456: Loss=0.4159
+Initial Training Epoch 457: Loss=0.4158
+Initial Training Epoch 458: Loss=0.4156
+Initial Training Epoch 459: Loss=0.4157
+Initial Training Epoch 460: Loss=0.4155
+Val Epoch 460: PSNR=33.8241, SSIM=0.918346,QNR=0.8191, DS:0.1402,D_L:0.0465
+Initial Training Epoch 461: Loss=0.4157
+Initial Training Epoch 462: Loss=0.4155
+Initial Training Epoch 463: Loss=0.4158
+Initial Training Epoch 464: Loss=0.4154
+Initial Training Epoch 465: Loss=0.4151
+Val Epoch 465: PSNR=33.9162, SSIM=0.926742,QNR=0.8104, DS:0.1477,D_L:0.0482
+Initial Training Epoch 466: Loss=0.4157
+Initial Training Epoch 467: Loss=0.4155
+Initial Training Epoch 468: Loss=0.4155
+Initial Training Epoch 469: Loss=0.4154
+Initial Training Epoch 470: Loss=0.4155
+Val Epoch 470: PSNR=34.3223, SSIM=0.926216,QNR=0.8069, DS:0.1466,D_L:0.0528
+Initial Training Epoch 471: Loss=0.4155
+Initial Training Epoch 472: Loss=0.4157
+Initial Training Epoch 473: Loss=0.4153
+Initial Training Epoch 474: Loss=0.4151
+Initial Training Epoch 475: Loss=0.4156
+Val Epoch 475: PSNR=33.2692, SSIM=0.920637,QNR=0.7997, DS:0.1649,D_L:0.0414
+Initial Training Epoch 476: Loss=0.4152
+Initial Training Epoch 477: Loss=0.4156
+Initial Training Epoch 478: Loss=0.4155
+Initial Training Epoch 479: Loss=0.4153
+Initial Training Epoch 480: Loss=0.4155
+Val Epoch 480: PSNR=34.3821, SSIM=0.929593,QNR=0.8194, DS:0.1350,D_L:0.0509
+Initial Training Epoch 481: Loss=0.4154
+Initial Training Epoch 482: Loss=0.4156
+Initial Training Epoch 483: Loss=0.4157
+Initial Training Epoch 484: Loss=0.4151
+Initial Training Epoch 485: Loss=0.4151
+Val Epoch 485: PSNR=33.2011, SSIM=0.918422,QNR=0.8097, DS:0.1588,D_L:0.0365
+Initial Training Epoch 486: Loss=0.4153
+Initial Training Epoch 487: Loss=0.4152
+Initial Training Epoch 488: Loss=0.4154
+Initial Training Epoch 489: Loss=0.4155
+Initial Training Epoch 490: Loss=0.4155
+Val Epoch 490: PSNR=33.3525, SSIM=0.916775,QNR=0.8025, DS:0.1636,D_L:0.0394
+Initial Training Epoch 491: Loss=0.4154
+Initial Training Epoch 492: Loss=0.4154
+Initial Training Epoch 493: Loss=0.4154
+Initial Training Epoch 494: Loss=0.4153
+Initial Training Epoch 495: Loss=0.4153
+Val Epoch 495: PSNR=34.2317, SSIM=0.926383,QNR=0.8106, DS:0.1552,D_L:0.0386
+Initial Training Epoch 496: Loss=0.4151
+Initial Training Epoch 497: Loss=0.4153
+Initial Training Epoch 498: Loss=0.4153
+Initial Training Epoch 499: Loss=0.4151
+Initial Training Epoch 500: Loss=0.4151
+Val Epoch 500: PSNR=33.8558, SSIM=0.929510,QNR=0.8136, DS:0.1498,D_L:0.0418
+Initial Training Epoch 501: Loss=0.4149
+Initial Training Epoch 502: Loss=0.4152
+Initial Training Epoch 503: Loss=0.4150
+Initial Training Epoch 504: Loss=0.4148
+Initial Training Epoch 505: Loss=0.4150
+Val Epoch 505: PSNR=34.5547, SSIM=0.924442,QNR=0.8214, DS:0.1377,D_L:0.0461
+Initial Training Epoch 506: Loss=0.4151
+Initial Training Epoch 507: Loss=0.4149
+Initial Training Epoch 508: Loss=0.4151
+Initial Training Epoch 509: Loss=0.4149
+Initial Training Epoch 510: Loss=0.4150
+Val Epoch 510: PSNR=33.8166, SSIM=0.920547,QNR=0.8061, DS:0.1611,D_L:0.0373
+Initial Training Epoch 511: Loss=0.4150
+Initial Training Epoch 512: Loss=0.4153
+Initial Training Epoch 513: Loss=0.4151
+Initial Training Epoch 514: Loss=0.4149
+Initial Training Epoch 515: Loss=0.4146
+Val Epoch 515: PSNR=33.8548, SSIM=0.921624,QNR=0.8178, DS:0.1401,D_L:0.0479
+Initial Training Epoch 516: Loss=0.4151
+Initial Training Epoch 517: Loss=0.4147
+Initial Training Epoch 518: Loss=0.4148
+Initial Training Epoch 519: Loss=0.4149
+Initial Training Epoch 520: Loss=0.4150
+Val Epoch 520: PSNR=33.8034, SSIM=0.925528,QNR=0.8200, DS:0.1428,D_L:0.0416
+Initial Training Epoch 521: Loss=0.4149
+Initial Training Epoch 522: Loss=0.4148
+Initial Training Epoch 523: Loss=0.4149
+Initial Training Epoch 524: Loss=0.4149
+Initial Training Epoch 525: Loss=0.4149
+Val Epoch 525: PSNR=34.0054, SSIM=0.921958,QNR=0.8076, DS:0.1547,D_L:0.0427
+Initial Training Epoch 526: Loss=0.4148
+Initial Training Epoch 527: Loss=0.4149
+Initial Training Epoch 528: Loss=0.4149
+Initial Training Epoch 529: Loss=0.4145
+Initial Training Epoch 530: Loss=0.4147
+Val Epoch 530: PSNR=33.8089, SSIM=0.919756,QNR=0.8226, DS:0.1403,D_L:0.0420
+Initial Training Epoch 531: Loss=0.4148
+Initial Training Epoch 532: Loss=0.4148
+Initial Training Epoch 533: Loss=0.4151
+Initial Training Epoch 534: Loss=0.4148
+Initial Training Epoch 535: Loss=0.4148
+Val Epoch 535: PSNR=34.0520, SSIM=0.918546,QNR=0.8141, DS:0.1476,D_L:0.0446
+Initial Training Epoch 536: Loss=0.4148
+Initial Training Epoch 537: Loss=0.4147
+Initial Training Epoch 538: Loss=0.4145
+Initial Training Epoch 539: Loss=0.4149
+Initial Training Epoch 540: Loss=0.4145
+Val Epoch 540: PSNR=34.3626, SSIM=0.920933,QNR=0.8099, DS:0.1483,D_L:0.0478
+Initial Training Epoch 541: Loss=0.4147
+Initial Training Epoch 542: Loss=0.4148
+Initial Training Epoch 543: Loss=0.4149
+Initial Training Epoch 544: Loss=0.4145
+Initial Training Epoch 545: Loss=0.4147
+Val Epoch 545: PSNR=33.9253, SSIM=0.923618,QNR=0.8150, DS:0.1541,D_L:0.0352
+Initial Training Epoch 546: Loss=0.4150
+Initial Training Epoch 547: Loss=0.4149
+Initial Training Epoch 548: Loss=0.4148
+Initial Training Epoch 549: Loss=0.4148
+Initial Training Epoch 550: Loss=0.4146
+Val Epoch 550: PSNR=33.5569, SSIM=0.921764,QNR=0.8203, DS:0.1476,D_L:0.0368
+Initial Training Epoch 551: Loss=0.4150
+Initial Training Epoch 552: Loss=0.4148
+Initial Training Epoch 553: Loss=0.4147
+Initial Training Epoch 554: Loss=0.4147
+Initial Training Epoch 555: Loss=0.4145
+Val Epoch 555: PSNR=34.4944, SSIM=0.920922,QNR=0.8131, DS:0.1460,D_L:0.0462
+Initial Training Epoch 556: Loss=0.4147
+Initial Training Epoch 557: Loss=0.4147
+Initial Training Epoch 558: Loss=0.4148
+Initial Training Epoch 559: Loss=0.4145
+Initial Training Epoch 560: Loss=0.4149
+Val Epoch 560: PSNR=33.8022, SSIM=0.918371,QNR=0.8173, DS:0.1470,D_L:0.0409
+Initial Training Epoch 561: Loss=0.4147
+Initial Training Epoch 562: Loss=0.4146
+Initial Training Epoch 563: Loss=0.4143
+Initial Training Epoch 564: Loss=0.4145
+Initial Training Epoch 565: Loss=0.4144
+Val Epoch 565: PSNR=34.3997, SSIM=0.925928,QNR=0.8202, DS:0.1406,D_L:0.0436
+Initial Training Epoch 566: Loss=0.4145
+Initial Training Epoch 567: Loss=0.4145
+Initial Training Epoch 568: Loss=0.4146
+Initial Training Epoch 569: Loss=0.4145
+Initial Training Epoch 570: Loss=0.4143
+Val Epoch 570: PSNR=34.7178, SSIM=0.930657,QNR=0.8219, DS:0.1421,D_L:0.0410
+Initial Training Epoch 571: Loss=0.4145
+Initial Training Epoch 572: Loss=0.4148
+Initial Training Epoch 573: Loss=0.4145
+Initial Training Epoch 574: Loss=0.4145
+Initial Training Epoch 575: Loss=0.4147
+Val Epoch 575: PSNR=34.7316, SSIM=0.927083,QNR=0.8253, DS:0.1348,D_L:0.0446
+Initial Training Epoch 576: Loss=0.4146
+Initial Training Epoch 577: Loss=0.4144
+Initial Training Epoch 578: Loss=0.4143
+Initial Training Epoch 579: Loss=0.4144
+Initial Training Epoch 580: Loss=0.4146
+Val Epoch 580: PSNR=34.3959, SSIM=0.923024,QNR=0.8026, DS:0.1516,D_L:0.0527
+Initial Training Epoch 581: Loss=0.4145
+Initial Training Epoch 582: Loss=0.4145
+Initial Training Epoch 583: Loss=0.4146
+Initial Training Epoch 584: Loss=0.4143
+Initial Training Epoch 585: Loss=0.4144
+Val Epoch 585: PSNR=33.7553, SSIM=0.924879,QNR=0.8072, DS:0.1539,D_L:0.0448
+Initial Training Epoch 586: Loss=0.4146
+Initial Training Epoch 587: Loss=0.4146
+Initial Training Epoch 588: Loss=0.4142
+Initial Training Epoch 589: Loss=0.4146
+Initial Training Epoch 590: Loss=0.4148
+Val Epoch 590: PSNR=33.8933, SSIM=0.920452,QNR=0.8147, DS:0.1513,D_L:0.0392
+Initial Training Epoch 591: Loss=0.4146
+Initial Training Epoch 592: Loss=0.4147
+Initial Training Epoch 593: Loss=0.4144
+Initial Training Epoch 594: Loss=0.4142
+Initial Training Epoch 595: Loss=0.4143
+Val Epoch 595: PSNR=34.4074, SSIM=0.928895,QNR=0.8273, DS:0.1335,D_L:0.0439
+Initial Training Epoch 596: Loss=0.4144
+Initial Training Epoch 597: Loss=0.4145
+Initial Training Epoch 598: Loss=0.4144
+Initial Training Epoch 599: Loss=0.4143
+Initial Training Epoch 600: Loss=0.4143
+Val Epoch 600: PSNR=33.9260, SSIM=0.927099,QNR=0.8052, DS:0.1582,D_L:0.0416
+Initial Training Epoch 601: Loss=0.4142
+Initial Training Epoch 602: Loss=0.4144
+Initial Training Epoch 603: Loss=0.4142
+Initial Training Epoch 604: Loss=0.4144
+Initial Training Epoch 605: Loss=0.4145
+Val Epoch 605: PSNR=34.1437, SSIM=0.928237,QNR=0.8200, DS:0.1470,D_L:0.0375
+Initial Training Epoch 606: Loss=0.4142
+Initial Training Epoch 607: Loss=0.4146
+Initial Training Epoch 608: Loss=0.4144
+Initial Training Epoch 609: Loss=0.4140
+Initial Training Epoch 610: Loss=0.4141
+Val Epoch 610: PSNR=34.2936, SSIM=0.921123,QNR=0.8209, DS:0.1404,D_L:0.0439
+Initial Training Epoch 611: Loss=0.4144
+Initial Training Epoch 612: Loss=0.4144
+Initial Training Epoch 613: Loss=0.4142
+Initial Training Epoch 614: Loss=0.4144
+Initial Training Epoch 615: Loss=0.4142
+Val Epoch 615: PSNR=34.3202, SSIM=0.922978,QNR=0.8242, DS:0.1418,D_L:0.0382
+Initial Training Epoch 616: Loss=0.4144
+Initial Training Epoch 617: Loss=0.4142
+Initial Training Epoch 618: Loss=0.4143
+Initial Training Epoch 619: Loss=0.4141
+Initial Training Epoch 620: Loss=0.4144
+Val Epoch 620: PSNR=34.1620, SSIM=0.924457,QNR=0.8188, DS:0.1441,D_L:0.0412
+Initial Training Epoch 621: Loss=0.4146
+Initial Training Epoch 622: Loss=0.4142
+Initial Training Epoch 623: Loss=0.4144
+Initial Training Epoch 624: Loss=0.4141
+Initial Training Epoch 625: Loss=0.4141
+Val Epoch 625: PSNR=34.0237, SSIM=0.922265,QNR=0.8224, DS:0.1383,D_L:0.0452
+Initial Training Epoch 626: Loss=0.4142
+Initial Training Epoch 627: Loss=0.4145
+Initial Training Epoch 628: Loss=0.4144
+Initial Training Epoch 629: Loss=0.4140
+Initial Training Epoch 630: Loss=0.4144
+Val Epoch 630: PSNR=34.2826, SSIM=0.923010,QNR=0.8139, DS:0.1480,D_L:0.0436
+Initial Training Epoch 631: Loss=0.4140
+Initial Training Epoch 632: Loss=0.4141
+Initial Training Epoch 633: Loss=0.4142
+Initial Training Epoch 634: Loss=0.4140
+Initial Training Epoch 635: Loss=0.4141
+Val Epoch 635: PSNR=34.6832, SSIM=0.930253,QNR=0.8187, DS:0.1477,D_L:0.0377
+Initial Training Epoch 636: Loss=0.4143
+Initial Training Epoch 637: Loss=0.4140
+Initial Training Epoch 638: Loss=0.4142
+Initial Training Epoch 639: Loss=0.4142
+Initial Training Epoch 640: Loss=0.4143
+Val Epoch 640: PSNR=34.6633, SSIM=0.927880,QNR=0.8266, DS:0.1387,D_L:0.0392
+Initial Training Epoch 641: Loss=0.4138
+Initial Training Epoch 642: Loss=0.4142
+Initial Training Epoch 643: Loss=0.4139
+Initial Training Epoch 644: Loss=0.4142
+Initial Training Epoch 645: Loss=0.4143
+Val Epoch 645: PSNR=33.3963, SSIM=0.923703,QNR=0.8206, DS:0.1511,D_L:0.0328
+Initial Training Epoch 646: Loss=0.4142
+Initial Training Epoch 647: Loss=0.4140
+Initial Training Epoch 648: Loss=0.4141
+Initial Training Epoch 649: Loss=0.4141
+Initial Training Epoch 650: Loss=0.4141
+Val Epoch 650: PSNR=33.6788, SSIM=0.924270,QNR=0.8135, DS:0.1593,D_L:0.0317
+Initial Training Epoch 651: Loss=0.4140
+Initial Training Epoch 652: Loss=0.4140
+Initial Training Epoch 653: Loss=0.4141
+Initial Training Epoch 654: Loss=0.4143
+Initial Training Epoch 655: Loss=0.4140
+Val Epoch 655: PSNR=33.9795, SSIM=0.927763,QNR=0.8119, DS:0.1543,D_L:0.0391
+Initial Training Epoch 656: Loss=0.4144
+Initial Training Epoch 657: Loss=0.4144
+Initial Training Epoch 658: Loss=0.4142
+Initial Training Epoch 659: Loss=0.4142
+Initial Training Epoch 660: Loss=0.4142
+Val Epoch 660: PSNR=33.5984, SSIM=0.922462,QNR=0.8157, DS:0.1553,D_L:0.0338
+Initial Training Epoch 661: Loss=0.4141
+Initial Training Epoch 662: Loss=0.4139
+Initial Training Epoch 663: Loss=0.4143
+Initial Training Epoch 664: Loss=0.4142
+Initial Training Epoch 665: Loss=0.4140
+Val Epoch 665: PSNR=33.4340, SSIM=0.924855,QNR=0.8064, DS:0.1584,D_L:0.0406
+Initial Training Epoch 666: Loss=0.4141
+Initial Training Epoch 667: Loss=0.4143
+Initial Training Epoch 668: Loss=0.4139
+Initial Training Epoch 669: Loss=0.4138
+Initial Training Epoch 670: Loss=0.4142
+Val Epoch 670: PSNR=33.8703, SSIM=0.922966,QNR=0.8141, DS:0.1558,D_L:0.0350
+Initial Training Epoch 671: Loss=0.4140
+Initial Training Epoch 672: Loss=0.4141
+Initial Training Epoch 673: Loss=0.4141
+Initial Training Epoch 674: Loss=0.4142
+Initial Training Epoch 675: Loss=0.4140
+Val Epoch 675: PSNR=34.3457, SSIM=0.923742,QNR=0.7951, DS:0.1576,D_L:0.0547
+Initial Training Epoch 676: Loss=0.4140
+Initial Training Epoch 677: Loss=0.4139
+Initial Training Epoch 678: Loss=0.4140
+Initial Training Epoch 679: Loss=0.4138
+Initial Training Epoch 680: Loss=0.4139
+Val Epoch 680: PSNR=34.1919, SSIM=0.925045,QNR=0.8123, DS:0.1481,D_L:0.0450
+Initial Training Epoch 681: Loss=0.4139
+Initial Training Epoch 682: Loss=0.4141
+Initial Training Epoch 683: Loss=0.4139
+Initial Training Epoch 684: Loss=0.4140
+Initial Training Epoch 685: Loss=0.4138
+Val Epoch 685: PSNR=33.9324, SSIM=0.924868,QNR=0.8078, DS:0.1558,D_L:0.0418
+Initial Training Epoch 686: Loss=0.4140
+Initial Training Epoch 687: Loss=0.4140
+Initial Training Epoch 688: Loss=0.4142
+Initial Training Epoch 689: Loss=0.4140
+Initial Training Epoch 690: Loss=0.4137
+Val Epoch 690: PSNR=33.8699, SSIM=0.923215,QNR=0.8100, DS:0.1533,D_L:0.0422
+Initial Training Epoch 691: Loss=0.4138
+Initial Training Epoch 692: Loss=0.4140
+Initial Training Epoch 693: Loss=0.4138
+Initial Training Epoch 694: Loss=0.4141
+Initial Training Epoch 695: Loss=0.4140
+Val Epoch 695: PSNR=33.7255, SSIM=0.925028,QNR=0.8171, DS:0.1497,D_L:0.0379
+Initial Training Epoch 696: Loss=0.4140
+Initial Training Epoch 697: Loss=0.4142
+Initial Training Epoch 698: Loss=0.4138
+Initial Training Epoch 699: Loss=0.4142
+Initial Training Epoch 700: Loss=0.4138
+Val Epoch 700: PSNR=34.2745, SSIM=0.926265,QNR=0.8039, DS:0.1605,D_L:0.0411
+Initial Training Epoch 701: Loss=0.4139
+Initial Training Epoch 702: Loss=0.4137
+Initial Training Epoch 703: Loss=0.4139
+Initial Training Epoch 704: Loss=0.4138
+Initial Training Epoch 705: Loss=0.4140
+Val Epoch 705: PSNR=33.6045, SSIM=0.927676,QNR=0.8047, DS:0.1552,D_L:0.0460
+Initial Training Epoch 706: Loss=0.4137
+Initial Training Epoch 707: Loss=0.4141
+Initial Training Epoch 708: Loss=0.4140
+Initial Training Epoch 709: Loss=0.4139
+Initial Training Epoch 710: Loss=0.4139
+Val Epoch 710: PSNR=33.5364, SSIM=0.926965,QNR=0.8217, DS:0.1397,D_L:0.0444
+Initial Training Epoch 711: Loss=0.4140
+Initial Training Epoch 712: Loss=0.4140
+Initial Training Epoch 713: Loss=0.4138
+Initial Training Epoch 714: Loss=0.4140
+Initial Training Epoch 715: Loss=0.4138
+Val Epoch 715: PSNR=33.8926, SSIM=0.927612,QNR=0.8183, DS:0.1486,D_L:0.0379
+Initial Training Epoch 716: Loss=0.4139
+Initial Training Epoch 717: Loss=0.4139
+Initial Training Epoch 718: Loss=0.4140
+Initial Training Epoch 719: Loss=0.4140
+Initial Training Epoch 720: Loss=0.4139
+Val Epoch 720: PSNR=34.5740, SSIM=0.930921,QNR=0.8237, DS:0.1396,D_L:0.0417
+Initial Training Epoch 721: Loss=0.4141
+Initial Training Epoch 722: Loss=0.4138
+Initial Training Epoch 723: Loss=0.4139
+Initial Training Epoch 724: Loss=0.4139
+Initial Training Epoch 725: Loss=0.4139
+Val Epoch 725: PSNR=33.8337, SSIM=0.924748,QNR=0.8143, DS:0.1538,D_L:0.0375
+Initial Training Epoch 726: Loss=0.4138
+Initial Training Epoch 727: Loss=0.4136
+Initial Training Epoch 728: Loss=0.4141
+Initial Training Epoch 729: Loss=0.4138
+Initial Training Epoch 730: Loss=0.4139
+Val Epoch 730: PSNR=34.8020, SSIM=0.932546,QNR=0.8109, DS:0.1456,D_L:0.0492
+Initial Training Epoch 731: Loss=0.4139
+Initial Training Epoch 732: Loss=0.4138
+Initial Training Epoch 733: Loss=0.4139
+Initial Training Epoch 734: Loss=0.4138
+Initial Training Epoch 735: Loss=0.4138
+Val Epoch 735: PSNR=34.4650, SSIM=0.927571,QNR=0.8234, DS:0.1408,D_L:0.0409
+Initial Training Epoch 736: Loss=0.4141
+Initial Training Epoch 737: Loss=0.4137
+Initial Training Epoch 738: Loss=0.4140
+Initial Training Epoch 739: Loss=0.4141
+Initial Training Epoch 740: Loss=0.4138
+Val Epoch 740: PSNR=34.0041, SSIM=0.929248,QNR=0.8270, DS:0.1457,D_L:0.0313
+Initial Training Epoch 741: Loss=0.4135
+Initial Training Epoch 742: Loss=0.4138
+Initial Training Epoch 743: Loss=0.4137
+Initial Training Epoch 744: Loss=0.4138
+Initial Training Epoch 745: Loss=0.4138
+Val Epoch 745: PSNR=34.3572, SSIM=0.925884,QNR=0.8220, DS:0.1448,D_L:0.0376
+Initial Training Epoch 746: Loss=0.4140
+Initial Training Epoch 747: Loss=0.4138
+Initial Training Epoch 748: Loss=0.4139
+Initial Training Epoch 749: Loss=0.4137
+Initial Training Epoch 750: Loss=0.4137
+Val Epoch 750: PSNR=33.9267, SSIM=0.917136,QNR=0.8021, DS:0.1644,D_L:0.0390
+Initial Training Epoch 751: Loss=0.4138
+Initial Training Epoch 752: Loss=0.4139
+Initial Training Epoch 753: Loss=0.4138
+Initial Training Epoch 754: Loss=0.4137
+Initial Training Epoch 755: Loss=0.4136
+Val Epoch 755: PSNR=34.6845, SSIM=0.925940,QNR=0.7995, DS:0.1633,D_L:0.0434
+Initial Training Epoch 756: Loss=0.4136
+Initial Training Epoch 757: Loss=0.4136
+Initial Training Epoch 758: Loss=0.4136
+Initial Training Epoch 759: Loss=0.4139
+Initial Training Epoch 760: Loss=0.4138
+Val Epoch 760: PSNR=33.9993, SSIM=0.921076,QNR=0.8184, DS:0.1491,D_L:0.0371
+Initial Training Epoch 761: Loss=0.4136
+Initial Training Epoch 762: Loss=0.4139
+Initial Training Epoch 763: Loss=0.4135
+Initial Training Epoch 764: Loss=0.4138
+Initial Training Epoch 765: Loss=0.4141
+Val Epoch 765: PSNR=34.4067, SSIM=0.926894,QNR=0.8216, DS:0.1421,D_L:0.0410
+Initial Training Epoch 766: Loss=0.4135
+Initial Training Epoch 767: Loss=0.4138
+Initial Training Epoch 768: Loss=0.4138
+Initial Training Epoch 769: Loss=0.4137
+Initial Training Epoch 770: Loss=0.4137
+Val Epoch 770: PSNR=33.4083, SSIM=0.921213,QNR=0.8138, DS:0.1516,D_L:0.0404
+Initial Training Epoch 771: Loss=0.4140
+Initial Training Epoch 772: Loss=0.4138
+Initial Training Epoch 773: Loss=0.4137
+Initial Training Epoch 774: Loss=0.4139
+Initial Training Epoch 775: Loss=0.4143
+Val Epoch 775: PSNR=34.5609, SSIM=0.924608,QNR=0.8106, DS:0.1538,D_L:0.0412
+Initial Training Epoch 776: Loss=0.4139
+Initial Training Epoch 777: Loss=0.4136
+Initial Training Epoch 778: Loss=0.4135
+Initial Training Epoch 779: Loss=0.4137
+Initial Training Epoch 780: Loss=0.4136
+Val Epoch 780: PSNR=34.1577, SSIM=0.925071,QNR=0.8036, DS:0.1623,D_L:0.0392
+Initial Training Epoch 781: Loss=0.4138
+Initial Training Epoch 782: Loss=0.4136
+Initial Training Epoch 783: Loss=0.4138
+Initial Training Epoch 784: Loss=0.4134
+Initial Training Epoch 785: Loss=0.4137
+Val Epoch 785: PSNR=34.2376, SSIM=0.924570,QNR=0.8234, DS:0.1468,D_L:0.0342
+Initial Training Epoch 786: Loss=0.4138
+Initial Training Epoch 787: Loss=0.4140
+Initial Training Epoch 788: Loss=0.4135
+Initial Training Epoch 789: Loss=0.4138
+Initial Training Epoch 790: Loss=0.4136
+Val Epoch 790: PSNR=34.1772, SSIM=0.928313,QNR=0.8119, DS:0.1511,D_L:0.0426
+Initial Training Epoch 791: Loss=0.4136
+Initial Training Epoch 792: Loss=0.4138
+Initial Training Epoch 793: Loss=0.4139
+Initial Training Epoch 794: Loss=0.4140
+Initial Training Epoch 795: Loss=0.4136
+Val Epoch 795: PSNR=33.9807, SSIM=0.927934,QNR=0.8150, DS:0.1498,D_L:0.0404
+Initial Training Epoch 796: Loss=0.4137
+Initial Training Epoch 797: Loss=0.4137
+Initial Training Epoch 798: Loss=0.4135
+Initial Training Epoch 799: Loss=0.4136
+Initial Training Epoch 800: Loss=0.4138
+Val Epoch 800: PSNR=34.2932, SSIM=0.924929,QNR=0.8258, DS:0.1414,D_L:0.0370
+Initial Training Epoch 801: Loss=0.4139
+Initial Training Epoch 802: Loss=0.4139
+Initial Training Epoch 803: Loss=0.4139
+Initial Training Epoch 804: Loss=0.4138
+Initial Training Epoch 805: Loss=0.4139
+Val Epoch 805: PSNR=33.7454, SSIM=0.930463,QNR=0.8315, DS:0.1384,D_L:0.0346
+Initial Training Epoch 806: Loss=0.4138
+Initial Training Epoch 807: Loss=0.4135
+Initial Training Epoch 808: Loss=0.4136
+Initial Training Epoch 809: Loss=0.4140
+Initial Training Epoch 810: Loss=0.4138
+Val Epoch 810: PSNR=34.0754, SSIM=0.921406,QNR=0.8166, DS:0.1529,D_L:0.0351
+Initial Training Epoch 811: Loss=0.4136
+Initial Training Epoch 812: Loss=0.4137
+Initial Training Epoch 813: Loss=0.4135
+Initial Training Epoch 814: Loss=0.4137
+Initial Training Epoch 815: Loss=0.4138
+Val Epoch 815: PSNR=34.2124, SSIM=0.926761,QNR=0.8111, DS:0.1540,D_L:0.0403
+Initial Training Epoch 816: Loss=0.4136
+Initial Training Epoch 817: Loss=0.4136
+Initial Training Epoch 818: Loss=0.4138
+Initial Training Epoch 819: Loss=0.4138
+Initial Training Epoch 820: Loss=0.4137
+Val Epoch 820: PSNR=34.8322, SSIM=0.927094,QNR=0.8283, DS:0.1390,D_L:0.0372
+Initial Training Epoch 821: Loss=0.4135
+Initial Training Epoch 822: Loss=0.4138
+Initial Training Epoch 823: Loss=0.4136
+Initial Training Epoch 824: Loss=0.4139
+Initial Training Epoch 825: Loss=0.4137
+Val Epoch 825: PSNR=34.5659, SSIM=0.923697,QNR=0.8034, DS:0.1571,D_L:0.0463
+Initial Training Epoch 826: Loss=0.4138
+Initial Training Epoch 827: Loss=0.4137
+Initial Training Epoch 828: Loss=0.4137
+Initial Training Epoch 829: Loss=0.4135
+Initial Training Epoch 830: Loss=0.4137
+Val Epoch 830: PSNR=34.3600, SSIM=0.925640,QNR=0.8075, DS:0.1501,D_L:0.0490
+Initial Training Epoch 831: Loss=0.4137
+Initial Training Epoch 832: Loss=0.4138
+Initial Training Epoch 833: Loss=0.4137
+Initial Training Epoch 834: Loss=0.4136
+Initial Training Epoch 835: Loss=0.4134
+Val Epoch 835: PSNR=35.1288, SSIM=0.927316,QNR=0.8179, DS:0.1451,D_L:0.0420
+Initial Training Epoch 836: Loss=0.4140
+Initial Training Epoch 837: Loss=0.4135
+Initial Training Epoch 838: Loss=0.4133
+Initial Training Epoch 839: Loss=0.4138
+Initial Training Epoch 840: Loss=0.4136
+Val Epoch 840: PSNR=33.6097, SSIM=0.922642,QNR=0.8152, DS:0.1428,D_L:0.0481
+Initial Training Epoch 841: Loss=0.4137
+Initial Training Epoch 842: Loss=0.4139
+Initial Training Epoch 843: Loss=0.4135
+Initial Training Epoch 844: Loss=0.4139
+Initial Training Epoch 845: Loss=0.4136
+Val Epoch 845: PSNR=34.1732, SSIM=0.919733,QNR=0.8191, DS:0.1479,D_L:0.0382
+Initial Training Epoch 846: Loss=0.4139
+Initial Training Epoch 847: Loss=0.4137
+Initial Training Epoch 848: Loss=0.4138
+Initial Training Epoch 849: Loss=0.4137
+Initial Training Epoch 850: Loss=0.4137
+Val Epoch 850: PSNR=33.7529, SSIM=0.925588,QNR=0.8120, DS:0.1515,D_L:0.0419
+Initial Training Epoch 851: Loss=0.4138
+Initial Training Epoch 852: Loss=0.4137
+Initial Training Epoch 853: Loss=0.4139
+Initial Training Epoch 854: Loss=0.4137
+Initial Training Epoch 855: Loss=0.4138
+Val Epoch 855: PSNR=33.9358, SSIM=0.925229,QNR=0.8202, DS:0.1440,D_L:0.0407
+Initial Training Epoch 856: Loss=0.4138
+Initial Training Epoch 857: Loss=0.4137
+Initial Training Epoch 858: Loss=0.4135
+Initial Training Epoch 859: Loss=0.4138
+Initial Training Epoch 860: Loss=0.4137
+Val Epoch 860: PSNR=33.9116, SSIM=0.931595,QNR=0.8240, DS:0.1445,D_L:0.0359
+Initial Training Epoch 861: Loss=0.4139
+Initial Training Epoch 862: Loss=0.4138
+Initial Training Epoch 863: Loss=0.4136
+Initial Training Epoch 864: Loss=0.4137
+Initial Training Epoch 865: Loss=0.4136
+Val Epoch 865: PSNR=33.7536, SSIM=0.927785,QNR=0.8112, DS:0.1532,D_L:0.0407
+Initial Training Epoch 866: Loss=0.4139
+Initial Training Epoch 867: Loss=0.4136
+Initial Training Epoch 868: Loss=0.4137
+Initial Training Epoch 869: Loss=0.4137
+Initial Training Epoch 870: Loss=0.4137
+Val Epoch 870: PSNR=33.7104, SSIM=0.926460,QNR=0.8142, DS:0.1536,D_L:0.0379
+Initial Training Epoch 871: Loss=0.4138
+Initial Training Epoch 872: Loss=0.4136
+Initial Training Epoch 873: Loss=0.4136
+Initial Training Epoch 874: Loss=0.4135
+Initial Training Epoch 875: Loss=0.4138
+Val Epoch 875: PSNR=33.9802, SSIM=0.920913,QNR=0.8055, DS:0.1555,D_L:0.0448
+Initial Training Epoch 876: Loss=0.4138
+Initial Training Epoch 877: Loss=0.4137
+Initial Training Epoch 878: Loss=0.4135
+Initial Training Epoch 879: Loss=0.4136
+Initial Training Epoch 880: Loss=0.4134
+Val Epoch 880: PSNR=33.8396, SSIM=0.927533,QNR=0.8181, DS:0.1503,D_L:0.0361
+Initial Training Epoch 881: Loss=0.4140
+Initial Training Epoch 882: Loss=0.4137
+Initial Training Epoch 883: Loss=0.4135
+Initial Training Epoch 884: Loss=0.4137
+Initial Training Epoch 885: Loss=0.4137
+Val Epoch 885: PSNR=34.4109, SSIM=0.926270,QNR=0.8181, DS:0.1430,D_L:0.0442
+Initial Training Epoch 886: Loss=0.4137
+Initial Training Epoch 887: Loss=0.4139
+Initial Training Epoch 888: Loss=0.4136
+Initial Training Epoch 889: Loss=0.4138
+Initial Training Epoch 890: Loss=0.4136
+Val Epoch 890: PSNR=34.1513, SSIM=0.924209,QNR=0.8283, DS:0.1386,D_L:0.0376
+Initial Training Epoch 891: Loss=0.4139
+Initial Training Epoch 892: Loss=0.4136
+Initial Training Epoch 893: Loss=0.4135
+Initial Training Epoch 894: Loss=0.4137
+Initial Training Epoch 895: Loss=0.4137
+Val Epoch 895: PSNR=35.2666, SSIM=0.933343,QNR=0.8158, DS:0.1423,D_L:0.0470
+Initial Training Epoch 896: Loss=0.4136
+Initial Training Epoch 897: Loss=0.4136
+Initial Training Epoch 898: Loss=0.4139
+Initial Training Epoch 899: Loss=0.4140
+Initial Training Epoch 900: Loss=0.4134
+Val Epoch 900: PSNR=34.5273, SSIM=0.929349,QNR=0.8182, DS:0.1441,D_L:0.0427
+Initial Training Epoch 901: Loss=0.4138
+Initial Training Epoch 902: Loss=0.4139
+Initial Training Epoch 903: Loss=0.4135
+Initial Training Epoch 904: Loss=0.4135
+Initial Training Epoch 905: Loss=0.4135
+Val Epoch 905: PSNR=34.4991, SSIM=0.925073,QNR=0.8131, DS:0.1462,D_L:0.0465
+Initial Training Epoch 906: Loss=0.4137
+Initial Training Epoch 907: Loss=0.4136
+Initial Training Epoch 908: Loss=0.4137
+Initial Training Epoch 909: Loss=0.4135
+Initial Training Epoch 910: Loss=0.4138
+Val Epoch 910: PSNR=33.9092, SSIM=0.923066,QNR=0.8083, DS:0.1583,D_L:0.0393
+Initial Training Epoch 911: Loss=0.4137
+Initial Training Epoch 912: Loss=0.4134
+Initial Training Epoch 913: Loss=0.4137
+Initial Training Epoch 914: Loss=0.4136
+Initial Training Epoch 915: Loss=0.4139
+Val Epoch 915: PSNR=34.4318, SSIM=0.925525,QNR=0.8230, DS:0.1469,D_L:0.0344
+Initial Training Epoch 916: Loss=0.4137
+Initial Training Epoch 917: Loss=0.4136
+Initial Training Epoch 918: Loss=0.4136
+Initial Training Epoch 919: Loss=0.4139
+Initial Training Epoch 920: Loss=0.4135
+Val Epoch 920: PSNR=33.1391, SSIM=0.917089,QNR=0.7996, DS:0.1704,D_L:0.0353
+Initial Training Epoch 921: Loss=0.4134
+Initial Training Epoch 922: Loss=0.4135
+Initial Training Epoch 923: Loss=0.4138
+Initial Training Epoch 924: Loss=0.4140
+Initial Training Epoch 925: Loss=0.4137
+Val Epoch 925: PSNR=34.1645, SSIM=0.925395,QNR=0.8185, DS:0.1466,D_L:0.0401
+Initial Training Epoch 926: Loss=0.4136
+Initial Training Epoch 927: Loss=0.4136
+Initial Training Epoch 928: Loss=0.4135
+Initial Training Epoch 929: Loss=0.4132
+Initial Training Epoch 930: Loss=0.4137
+Val Epoch 930: PSNR=34.0652, SSIM=0.927993,QNR=0.8212, DS:0.1449,D_L:0.0397
+Initial Training Epoch 931: Loss=0.4137
+Initial Training Epoch 932: Loss=0.4137
+Initial Training Epoch 933: Loss=0.4138
+Initial Training Epoch 934: Loss=0.4135
+Initial Training Epoch 935: Loss=0.4136
+Val Epoch 935: PSNR=34.2112, SSIM=0.922953,QNR=0.8069, DS:0.1562,D_L:0.0433
+Initial Training Epoch 936: Loss=0.4137
+Initial Training Epoch 937: Loss=0.4136
+Initial Training Epoch 938: Loss=0.4140
+Initial Training Epoch 939: Loss=0.4137
+Initial Training Epoch 940: Loss=0.4134
+Val Epoch 940: PSNR=34.2911, SSIM=0.927979,QNR=0.8223, DS:0.1428,D_L:0.0397
+Initial Training Epoch 941: Loss=0.4136
+Initial Training Epoch 942: Loss=0.4135
+Initial Training Epoch 943: Loss=0.4137
+Initial Training Epoch 944: Loss=0.4135
+Initial Training Epoch 945: Loss=0.4136
+Val Epoch 945: PSNR=33.9990, SSIM=0.927970,QNR=0.8276, DS:0.1373,D_L:0.0398
+Initial Training Epoch 946: Loss=0.4135
+Initial Training Epoch 947: Loss=0.4134
+Initial Training Epoch 948: Loss=0.4136
+Initial Training Epoch 949: Loss=0.4137
+Initial Training Epoch 950: Loss=0.4135
+Val Epoch 950: PSNR=33.2823, SSIM=0.919345,QNR=0.7910, DS:0.1682,D_L:0.0485
+Initial Training Epoch 951: Loss=0.4137
+Initial Training Epoch 952: Loss=0.4137
+Initial Training Epoch 953: Loss=0.4139
+Initial Training Epoch 954: Loss=0.4137
+Initial Training Epoch 955: Loss=0.4137
+Val Epoch 955: PSNR=34.1378, SSIM=0.925282,QNR=0.8151, DS:0.1526,D_L:0.0377
+Initial Training Epoch 956: Loss=0.4136
+Initial Training Epoch 957: Loss=0.4137
+Initial Training Epoch 958: Loss=0.4137
+Initial Training Epoch 959: Loss=0.4137
+Initial Training Epoch 960: Loss=0.4137
+Val Epoch 960: PSNR=34.3455, SSIM=0.923418,QNR=0.8167, DS:0.1516,D_L:0.0372
+Initial Training Epoch 961: Loss=0.4136
+Initial Training Epoch 962: Loss=0.4138
+Initial Training Epoch 963: Loss=0.4137
+Initial Training Epoch 964: Loss=0.4135
+Initial Training Epoch 965: Loss=0.4136
+Val Epoch 965: PSNR=34.5200, SSIM=0.924762,QNR=0.8345, DS:0.1382,D_L:0.0309
+Initial Training Epoch 966: Loss=0.4135
+Initial Training Epoch 967: Loss=0.4138
+Initial Training Epoch 968: Loss=0.4136
+Initial Training Epoch 969: Loss=0.4135
+Initial Training Epoch 970: Loss=0.4138
+Val Epoch 970: PSNR=34.2703, SSIM=0.927018,QNR=0.8182, DS:0.1496,D_L:0.0372
+Initial Training Epoch 971: Loss=0.4135
+Initial Training Epoch 972: Loss=0.4135
+Initial Training Epoch 973: Loss=0.4134
+Initial Training Epoch 974: Loss=0.4135
+Initial Training Epoch 975: Loss=0.4136
+Val Epoch 975: PSNR=35.0402, SSIM=0.933507,QNR=0.8225, DS:0.1434,D_L:0.0388
+Initial Training Epoch 976: Loss=0.4137
+Initial Training Epoch 977: Loss=0.4134
+Initial Training Epoch 978: Loss=0.4140
+Initial Training Epoch 979: Loss=0.4138
+Initial Training Epoch 980: Loss=0.4137
+Val Epoch 980: PSNR=34.1589, SSIM=0.921135,QNR=0.8097, DS:0.1617,D_L:0.0335
+Initial Training Epoch 981: Loss=0.4136
+Initial Training Epoch 982: Loss=0.4135
+Initial Training Epoch 983: Loss=0.4137
+Initial Training Epoch 984: Loss=0.4135
+Initial Training Epoch 985: Loss=0.4133
+Val Epoch 985: PSNR=34.3024, SSIM=0.928859,QNR=0.8315, DS:0.1377,D_L:0.0352
+Initial Training Epoch 986: Loss=0.4136
+Initial Training Epoch 987: Loss=0.4136
+Initial Training Epoch 988: Loss=0.4135
+Initial Training Epoch 989: Loss=0.4136
+Initial Training Epoch 990: Loss=0.4137
+Val Epoch 990: PSNR=34.1885, SSIM=0.922964,QNR=0.8022, DS:0.1637,D_L:0.0405
+Initial Training Epoch 991: Loss=0.4138
+Initial Training Epoch 992: Loss=0.4136
+Initial Training Epoch 993: Loss=0.4136
+Initial Training Epoch 994: Loss=0.4134
+Initial Training Epoch 995: Loss=0.4137
+Val Epoch 995: PSNR=33.7791, SSIM=0.927989,QNR=0.8120, DS:0.1506,D_L:0.0433
+Initial Training Epoch 996: Loss=0.4137
+Initial Training Epoch 997: Loss=0.4137
+Initial Training Epoch 998: Loss=0.4136
+Initial Training Epoch 999: Loss=0.4137
+Initial Training Epoch 1000: Loss=0.4135
+Val Epoch 1000: PSNR=34.0626, SSIM=0.919706,QNR=0.8089, DS:0.1587,D_L:0.0376
+Training done.
